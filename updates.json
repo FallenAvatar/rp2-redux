@@ -1,0 +1,10 @@
+{
+	"homepage": "https://github.com/FallenAvatar/rp2-redux/",
+	"1.16": {
+	  "1.0.0": "Mod created"
+	},
+	"promos": {
+	  "1.16-latest": "1.0.0",
+	  "1.16-recommended": "1.0.0",
+	}
+  }

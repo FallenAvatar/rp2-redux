@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "src\\main\\resources"
+		},
+		{
+			"path": "src\\main\\java"
+		}
+	],
+	"settings": {
+		"java.dependency.syncWithFolderExplorer": true,
+		"java.dependency.packagePresentation": "flat",
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"datapack.env.language": "en",
+		"datapack.lint.eol": "LF"
+	}
+}

@@ -1,0 +1,32 @@
+modLoader="javafml"
+# 36 is forge for 1.16.5
+loaderVersion="[36,)"
+license="MIT License"
+issueTrackerURL="https://github.com/FallenAvatar/rp2-redux/issues"
+
+[[mods]]
+	modId="rp2_redux"
+	version="${file.jarVersion}"
+	displayName="RP2 Redux"
+	updateJSONURL="https://github.com/FallenAvatar/rp2-redux/raw/updates.json"
+	displayURL="https://github.com/FallenAvatar/rp2-redux"
+	#logoFile="logo.png"
+	credits="Thanks for this example mod goes to Java"
+	authors="FallenAvatar"
+	description='''
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis lacinia magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sagittis luctus odio eu tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque volutpat ligula eget lacus auctor sagittis. In hac habitasse platea dictumst. Nunc gravida elit vitae sem vehicula efficitur. Donec mattis ipsum et arcu lobortis, eleifend sagittis sem rutrum. Cras pharetra quam eget posuere fermentum. Sed id tincidunt justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	'''
+
+[[dependencies.rp2_redux]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.rp2_redux]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
