@@ -4,9 +4,12 @@ import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock.Properties;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraftforge.fml.RegistryObject;
 
 import static fallenavatar.rp2_redux.common.RP2ItemGroups.*;
-import static fallenavatar.rp2_redux.util.constants.Constants.*;
+
+import com.google.common.base.Supplier;
 
 import static fallenavatar.rp2_redux.RP2ReduxMod.BLOCKS;
 import static fallenavatar.rp2_redux.RP2ReduxMod.ITEMS;
@@ -14,8 +17,12 @@ import static fallenavatar.rp2_redux.RP2ReduxMod.ITEMS;
 public class RegistrationHelper {
 	private RegistrationHelper() {}
 
-	public static void registerBlock(String id, Properties props) {
-		BLOCKS.register(id, () -> new Block(props));
-		ITEMS.register(id, () -> new BlockItem(BLOCKS.get(id), new Item.Properties().tab(RP2_BLOCKS)));
+	public static void registerBlock(String name, Properties props) {
+		BLOCKS.register(name, () -> new Block(props));
+		ITEMS.register(name, () -> new BlockItem(BLOCKS.get(name), new Item.Properties().tab(RP2_BLOCKS)));
 	}
+
+	public static RegistryObject<Item> registerItem(String name, Supplier<Item> sup) {
+        return ITEMS.register(name, sup);
+    }
 }

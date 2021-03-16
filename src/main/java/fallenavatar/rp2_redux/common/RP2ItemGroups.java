@@ -20,4 +20,13 @@ public class RP2ItemGroups {
             return new ItemStack(ITEMS.get(ID_MARBLE_BRICKS));
         }
     };
+
+	public static final ItemGroup RP2_ITEMS = new ItemGroup(-1, ID_RP2_REDUX + ".items") {
+        @Override
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+
+            return new ItemStack(ITEMS.get(ID_MARBLE_BRICKS));
+        }
+    };
 }

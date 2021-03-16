@@ -3,14 +3,8 @@ package fallenavatar.rp2_redux.init;
 public class RP2IDs {
 	private RP2IDs() {}
 
-	// region VANILLA
-    //public static final String ID_CHARCOAL_BLOCK = "charcoal_block";
-    // endregion
-
-    // region RESOURCES
-    // endregion
-
-    // region STORAGE
+    // region ITEMS
+	public static final String ID_SCREWDRIVER = "screwdriver";
     // endregion
 
     // region BLOCKS
