@@ -24,7 +24,7 @@ import fallenavatar.rp2_redux.registries.DeferredRegisterCoFH;
 
 import java.util.stream.Collectors;
 
-import static fallenavatar.rp2_redux.util.constants.Constants.*;
+import static fallenavatar.rp2_redux.common.Constants.*;
 
 @Mod(ID_RP2_REDUX)
 public class RP2ReduxMod {

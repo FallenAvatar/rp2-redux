@@ -6,8 +6,8 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 import static fallenavatar.rp2_redux.RP2ReduxMod.ITEMS;
-import static fallenavatar.rp2_redux.util.constants.Constants.*;
-import static fallenavatar.rp2_redux.init.RP2IDs.*;
+import static fallenavatar.rp2_redux.common.Constants.*;
+import static fallenavatar.rp2_redux.common.RP2IDs.*;
 
 public class RP2ItemGroups {
 	private RP2ItemGroups() {}
@@ -26,7 +26,7 @@ public class RP2ItemGroups {
         @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
 
-            return new ItemStack(ITEMS.get(ID_MARBLE_BRICKS));
+            return new ItemStack(ITEMS.get(ID_SCREWDRIVER));
         }
     };
 }
