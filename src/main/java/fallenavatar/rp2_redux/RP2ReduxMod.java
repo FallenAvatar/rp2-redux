@@ -20,6 +20,7 @@ import org.apache.logging.log4j.Logger;
 
 import fallenavatar.rp2_redux.init.RP2Blocks;
 import fallenavatar.rp2_redux.init.RP2Items;
+import fallenavatar.rp2_redux.registries.DeferredRegisterCoFH;
 
 import java.util.stream.Collectors;
 
@@ -29,8 +30,8 @@ import static fallenavatar.rp2_redux.util.constants.Constants.*;
 public class RP2ReduxMod {
 	public static final Logger LOG = LogManager.getLogger(ID_RP2_REDUX);
 
-	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ID_RP2_REDUX);
-	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ID_RP2_REDUX);
+	public static final DeferredRegisterCoFH<Block> BLOCKS = DeferredRegisterCoFH.create(ForgeRegistries.BLOCKS, ID_RP2_REDUX);
+	public static final DeferredRegisterCoFH<Item> ITEMS = DeferredRegisterCoFH.create(ForgeRegistries.ITEMS, ID_RP2_REDUX);
 
 	public RP2ReduxMod() {
 		final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

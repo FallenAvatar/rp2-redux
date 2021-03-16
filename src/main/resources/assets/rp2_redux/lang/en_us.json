@@ -1,7 +1,16 @@
 {
-	"_comment": "========================================================================================================",
-	"_comment": "RP2 Redux",
-	"_comment": "========================================================================================================",
+	"_comment1": "========================================================================================================",
+	"_comment2": "RP2 Redux",
+	"_comment3": "========================================================================================================",
 
-	"info.rp2_redux.test": "This is just a test."
+	"info.rp2_redux.test": "This is just a test.",
+
+	"block.rp2_redux.marble": "Marble",
+	"block.rp2_redux.marble_bricks": "Marble Bricks",
+
+	"block.rp2_redux.basalt": "Basalt",
+	"block.rp2_redux.basalt_bricks": "Basalt Bricks",
+	"block.rp2_redux.basalt_smooth": "Smooth Basalt",
+	"block.rp2_redux.basalt_cobblestone": "Basalt Cobblestone",
+	"block.rp2_redux.basalt_chiseled": "Chiseled Basalt"
 }

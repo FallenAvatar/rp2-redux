@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "rp2_redux:block/world/marble",
+		"particle": "rp2_redux:block/world/marble"
+	}
+}
