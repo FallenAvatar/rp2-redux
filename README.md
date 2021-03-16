@@ -1,2 +1,2 @@
-# rp2-redux
+# rp2_redux
 A MineCraft Mod

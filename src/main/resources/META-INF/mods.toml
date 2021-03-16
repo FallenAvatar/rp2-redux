@@ -8,19 +8,19 @@ issueTrackerURL="https://github.com/FallenAvatar/rp2-redux/issues"
 	modId="rp2_redux"
 	version="${file.jarVersion}"
 	displayName="RP2 Redux"
-	updateJSONURL="https://github.com/FallenAvatar/rp2-redux/raw/updates.json"
+	updateJSONURL="https://github.com/FallenAvatar/rp2-redux/raw/main/updates.json"
 	displayURL="https://github.com/FallenAvatar/rp2-redux"
-	#logoFile="logo.png"
-	credits="Thanks for this example mod goes to Java"
+	logoFile="logo.png"
+	credits="Thanks for this mod goes to MinecraftForge, Team COFH, and Eloraam"
 	authors="FallenAvatar"
 	description='''
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis lacinia magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sagittis luctus odio eu tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque volutpat ligula eget lacus auctor sagittis. In hac habitasse platea dictumst. Nunc gravida elit vitae sem vehicula efficitur. Donec mattis ipsum et arcu lobortis, eleifend sagittis sem rutrum. Cras pharetra quam eget posuere fermentum. Sed id tincidunt justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	A recreation of RP2 in Modern mineCraft
 	'''
 
 [[dependencies.rp2_redux]]
     modId="forge"
     mandatory=true
-    versionRange="[36,)" #mandatory
+    versionRange="[36,)"
     ordering="NONE"
     side="BOTH"
 
