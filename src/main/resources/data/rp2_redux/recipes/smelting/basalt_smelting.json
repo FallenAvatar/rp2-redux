@@ -1,0 +1,10 @@
+  
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+	  "item": "rp2_redux:basalt_cobblestone"
+	},
+	"result": "rp2_redux:basalt",
+	"experience": 0.5,
+	"cookingtime": 200
+  }

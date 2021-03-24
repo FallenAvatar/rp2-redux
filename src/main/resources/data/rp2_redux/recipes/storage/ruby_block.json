@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"GGG",
+		"GGG",
+		"GGG"
+	],
+	"key": {
+		"G": {
+			"tag": "forge:gems/ruby"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:ruby_block"
+	}
+}

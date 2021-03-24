@@ -1,0 +1,8 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [{ "item": "rp2_redux:green_sapphire_block"	}],
+	"result": {
+		"item": "rp2_redux:green_sapphire",
+		"count": 9
+	}
+}

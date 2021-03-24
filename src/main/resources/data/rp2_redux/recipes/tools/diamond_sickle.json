@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" G ",
+		"  G",
+		"SG "
+	],
+	"key": {
+		"G": {
+			"tag": "forge:gems/diamond"
+		},
+		"S": {
+			"tag": "forge:rods/wooden"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:diamond_sickle"
+	}
+}

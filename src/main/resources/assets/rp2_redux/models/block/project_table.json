@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"south": "rp2_redux:block/machines/project_table-side",
+		"east": "rp2_redux:block/machines/project_table-front",
+		"west": "rp2_redux:block/machines/project_table-side",
+		"north": "rp2_redux:block/machines/project_table-side",
+		"up": "rp2_redux:block/machines/project_table-top",
+		"down": "rp2_redux:block/machines/project_table-bot",
+		"particle": "rp2_redux:block/machines/project_table-side"
+	}
+}

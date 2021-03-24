@@ -1,6 +1,0 @@
-{
-	"parent": "minecraft:item/generated",
-	"textures": {
-		"layer0": "rp2_redux:item/tools/axe_sapphire"
-	}
-}

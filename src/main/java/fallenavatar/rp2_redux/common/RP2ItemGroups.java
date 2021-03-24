@@ -29,4 +29,31 @@ public class RP2ItemGroups {
             return new ItemStack(ITEMS.get(ID_SCREWDRIVER));
         }
     };
+
+	public static final ItemGroup RP2_MACHINES = new ItemGroup(-1, ID_RP2_REDUX + ".machines") {
+        @Override
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+
+            return new ItemStack(ITEMS.get(ID_PROJECT_TABLE));
+        }
+    };
+
+	public static final ItemGroup RP2_TOOLS = new ItemGroup(-1, ID_RP2_REDUX + ".tools") {
+        @Override
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+
+            return new ItemStack(ITEMS.get(ID_SCREWDRIVER));
+        }
+    };
+
+	public static final ItemGroup RP2_COMBAT = new ItemGroup(-1, ID_RP2_REDUX + ".combat") {
+        @Override
+        @OnlyIn(Dist.CLIENT)
+        public ItemStack makeIcon() {
+
+            return new ItemStack(ITEMS.get(ID_RUBY+"_sword"));
+        }
+    };
 }

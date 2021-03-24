@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "rp2_redux:item/tools/green_sapphire_shovel"
+	}
+}

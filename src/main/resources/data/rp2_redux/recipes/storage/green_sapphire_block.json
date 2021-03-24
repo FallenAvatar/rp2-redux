@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"GGG",
+		"GGG",
+		"GGG"
+	],
+	"key": {
+		"G": {
+			"tag": "forge:gems/green_sapphire"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:green_sapphire_block"
+	}
+}

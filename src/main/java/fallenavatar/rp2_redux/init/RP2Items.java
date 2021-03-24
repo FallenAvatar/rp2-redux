@@ -1,27 +1,33 @@
 package fallenavatar.rp2_redux.init;
 
 import fallenavatar.rp2_redux.util.helpers.RegistrationHelper;
-import net.minecraft.item.Item;
-import net.minecraft.item.Rarity;
 
 import static fallenavatar.rp2_redux.common.RP2IDs.*;
-import static fallenavatar.rp2_redux.common.RP2ItemGroups.*;
 import static fallenavatar.rp2_redux.common.RP2ItemTiers.*;
-
-import fallenavatar.rp2_redux.item.RP2AxeItem;
 
 public class RP2Items {
 	private RP2Items() {}
 
 	public static void register() {
-		RegistrationHelper.registerItem(ID_RUBY, () -> new Item(new Item.Properties().tab(RP2_ITEMS)));
-		RegistrationHelper.registerItem(ID_GREEN_SAPPHIRE, () -> new Item(new Item.Properties().tab(RP2_ITEMS)));
-		RegistrationHelper.registerItem(ID_SAPPHIRE, () -> new Item(new Item.Properties().tab(RP2_ITEMS)));
+		RegistrationHelper.registerGemSet(ID_RUBY);
+		RegistrationHelper.registerGemSet(ID_GREEN_SAPPHIRE);
+		RegistrationHelper.registerGemSet(ID_SAPPHIRE);
 
-		RegistrationHelper.registerItem(ID_SCREWDRIVER, () -> new Item(new Item.Properties().tab(RP2_ITEMS)));
+		/* RegistrationHelper.registerMetalSet(ID_COPPER);
+		RegistrationHelper.registerMetalSet(ID_TIN);
+		RegistrationHelper.registerMetalSet(ID_SILVER);
+		RegistrationHelper.registerMetalSet(ID_BRASS); */
 
-		RegistrationHelper.registerItem(ID_AXE_RUBY, () -> new RP2AxeItem( MATERIAL_RUBY, new Item.Properties().rarity(Rarity.UNCOMMON)));
-		RegistrationHelper.registerItem(ID_AXE_GREEN_SAPPHIRE, () -> new RP2AxeItem( MATERIAL_GREEN_SAPPHIRE, new Item.Properties().rarity(Rarity.UNCOMMON)));
-		RegistrationHelper.registerItem(ID_AXE_SAPPHIRE, () -> new RP2AxeItem( MATERIAL_SAPPHIRE, new Item.Properties().rarity(Rarity.UNCOMMON)));
+		RegistrationHelper.registerItem(ID_SCREWDRIVER);
+
+		RegistrationHelper.registerStandardToolSet(ID_RUBY, MATERIAL_RUBY);
+		RegistrationHelper.registerStandardToolSet(ID_GREEN_SAPPHIRE, MATERIAL_GREEN_SAPPHIRE);
+		RegistrationHelper.registerStandardToolSet(ID_SAPPHIRE, MATERIAL_SAPPHIRE);
+
+		RegistrationHelper.registerStandardToolSet(ID_WOOD, MATERIAL_RUBY, false, true);
+		RegistrationHelper.registerStandardToolSet(ID_STONE, MATERIAL_RUBY, false, true);
+		RegistrationHelper.registerStandardToolSet(ID_IRON, MATERIAL_RUBY, true, true);
+		RegistrationHelper.registerStandardToolSet(ID_GOLD, MATERIAL_RUBY, false, true);
+		RegistrationHelper.registerStandardToolSet(ID_DIAMOND, MATERIAL_RUBY, true, true);
 	}
 }

@@ -5,10 +5,11 @@
 	  "1.0.1": "Starting to add blocks",
 	  "1.0.2": "Starting to add items",
 	  "1.0.3": "Starting to add recipes",
-	  "1.0.4": "Starting to add tools"
+	  "1.0.4": "Starting to add tools",
+	  "1.0.5": "Starting the project table"
 	},
 	"promos": {
-	  "1.16.5-latest": "1.0.4",
-	  "1.16.5-recommended": "1.0.4"
+	  "1.16.5-latest": "1.0.5",
+	  "1.16.5-recommended": "1.0.5"
 	}
   }

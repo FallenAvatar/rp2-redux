@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SSS",
+		" GG",
+		"   "
+	],
+	"key": {
+		"G": {
+			"tag": "forge:gems/sapphire"
+		},
+		"S": {
+			"tag": "forge:rods/wooden"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:sapphire_handsaw"
+	}
+}

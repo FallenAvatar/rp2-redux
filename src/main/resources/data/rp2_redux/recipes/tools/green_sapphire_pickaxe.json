@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"GGG",
+		" S ",
+		" S "
+	],
+	"key": {
+		"G": {
+			"tag": "forge:gems/green_sapphire"
+		},
+		"S": {
+			"tag": "forge:rods/wooden"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:green_sapphire_pickaxe"
+	}
+}

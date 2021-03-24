@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"PPP",
+		"STS",
+		"SCS"
+	],
+	"key": {
+		"P": {
+			"tag": "minecraft:planks"
+		},
+		"S": {
+			"tag": "forge:stone"
+		},
+		"C": {
+			"item": "minecraft:chest"
+		},
+		"T": {
+			"item": "minecraft:crafting_table"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:project_table"
+	}
+}

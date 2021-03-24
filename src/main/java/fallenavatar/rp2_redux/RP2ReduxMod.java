@@ -21,6 +21,7 @@ import org.apache.logging.log4j.Logger;
 import fallenavatar.rp2_redux.init.RP2Blocks;
 import fallenavatar.rp2_redux.init.RP2Items;
 import fallenavatar.rp2_redux.registries.DeferredRegisterCoFH;
+import fallenavatar.rp2_redux.world.gen.feature.RP2Features;
 
 import java.util.stream.Collectors;
 
@@ -53,6 +54,8 @@ public class RP2ReduxMod {
 		@SubscribeEvent
 		public static void onCommonSetup(final FMLCommonSetupEvent event) {
 			LOG.info("HELLO from onCommonSetup");
+
+			event.enqueueWork(RP2Features::setup);
 		}
 	
 		@SubscribeEvent
