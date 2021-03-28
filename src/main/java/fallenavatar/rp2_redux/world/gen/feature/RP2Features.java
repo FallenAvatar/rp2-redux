@@ -26,17 +26,9 @@ public class RP2Features {
 	}
 
 	public static void setup() {
-		/*
-		 * ORE_COPPER = register("ore_copper", new ConfiguredFeature<>(Feature.ORE, new
-		 * OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-		 * BLOCKS.get(ID_COPPER + "_ore").defaultBlockState(), 24))
-		 * .decorated(Placement.DEPTH_AVERAGE.configured(depthRange(32, 32))).squared()
-		 * .count(24));
-		 */
-
 		ORE_COPPER = register("ore_copper", Feature.ORE.configured(
 						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BLOCKS.get(ID_COPPER + "_ore").defaultBlockState(), 16))
-								.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(32, 32))).squared().count(20));
+								.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(32, 20))).squared().count(12));
 
 		ORE_TIN = register("ore_tin",
 				new ConfiguredFeature<>(Feature.ORE,
@@ -49,7 +41,7 @@ public class RP2Features {
 				new ConfiguredFeature<>(Feature.ORE,
 						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
 								BLOCKS.get(ID_SILVER + "_ore").defaultBlockState(), 6))
-										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(20, 16))).squared()
+										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(16, 16))).squared()
 										.count(2));
 
 		ORE_TUNGSTEN = register("ore_tungsten",
@@ -64,12 +56,12 @@ public class RP2Features {
 						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
 								BLOCKS.get(ID_NIKOLITE + "_ore").defaultBlockState(), 6))
 										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(10, 8))).squared()
-										.count(2));
+										.count(4));
 
-		ORE_GREEN_SAPPHIRE = register("ore_greeen_sapphire",
+		ORE_GREEN_SAPPHIRE = register("ore_green_sapphire",
 				new ConfiguredFeature<>(Feature.ORE,
 						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-								BLOCKS.get(ID_GREEN_SAPPHIRE + "_ore").defaultBlockState(), 4))
+								BLOCKS.get(ID_GREEN_SAPPHIRE + "_ore").defaultBlockState(), 6))
 										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(10, 8))).squared()
 										.count(1));
 
@@ -78,14 +70,14 @@ public class RP2Features {
 						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
 								BLOCKS.get(ID_RUBY + "_ore").defaultBlockState(), 3))
 										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(8, 8))).squared()
-										.count(1));
+										.count(3));
 
 		ORE_SAPPHIRE = register("ore_sapphire",
 				new ConfiguredFeature<>(Feature.ORE,
 						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
 								BLOCKS.get(ID_SAPPHIRE + "_ore").defaultBlockState(), 3))
 										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(14, 8))).squared()
-										.count(1));
+										.count(2));
 
 	}
 

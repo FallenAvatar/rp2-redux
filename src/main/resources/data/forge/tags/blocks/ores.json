@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"values": [
+		"#forge:ores/copper",
+		"#forge:ores/nikolite",
+		"#forge:ores/silver",
+		"#forge:ores/tin",
+		"#forge:ores/tungsten",
+		"#forge:ores/green_sapphire",
+		"#forge:ores/ruby",
+		"#forge:ores/sapphire"
+	]
+}
