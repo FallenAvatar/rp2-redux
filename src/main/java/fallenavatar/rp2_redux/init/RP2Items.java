@@ -9,6 +9,8 @@ public class RP2Items {
 	private RP2Items() {}
 
 	public static void register() {
+		RegistrationHelper.registerDustSet(ID_NIKOLITE);
+
 		RegistrationHelper.registerGemSet(ID_RUBY);
 		RegistrationHelper.registerGemSet(ID_GREEN_SAPPHIRE);
 		RegistrationHelper.registerGemSet(ID_SAPPHIRE);

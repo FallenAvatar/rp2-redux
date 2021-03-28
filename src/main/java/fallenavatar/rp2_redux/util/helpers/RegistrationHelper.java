@@ -122,6 +122,26 @@ public class RegistrationHelper {
     }
     // endregion
 
+	// region GEM SETS
+    public static void registerDustSet(String prefix) {
+        registerDustSet(prefix, RP2_ITEMS, Rarity.COMMON, false);
+    }
+
+    public static void registerDustSet(String prefix, ItemGroup group) {
+        registerDustSet(prefix, group, Rarity.COMMON, false);
+    }
+
+	public static void registerDustSet(String prefix, ItemGroup group, Rarity rarity) {
+        registerDustSet(prefix, group, rarity, false);
+    }
+
+    public static void registerDustSet(String prefix, ItemGroup group, Rarity rarity, boolean vanilla) {
+        ITEMS.register(prefix+"_dust", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
+
+		//ITEMS.register(prefix + "_block", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
+    }
+    // endregion
+
     // region TOOL SETS
 	public static void registerStandardToolSet(String prefix, IItemTier tier) {
 		registerStandardToolSet(prefix, tier, true, false);

@@ -1,0 +1,6 @@
+
+Remove base blocks to see ores ++
+
+/fill ~-8 ~0 ~-8 ~8 ~-60 ~8 air replace #minecraft:base_stone_overworld
+/fill ~-8 ~0 ~-8 ~8 ~-60 ~8 air replace minecraft:dirt
+/fill ~-8 ~0 ~-8 ~8 ~-60 ~8 air replace minecraft:grass_block
