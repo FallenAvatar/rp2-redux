@@ -13,10 +13,10 @@ public class RP2Items {
 		RegistrationHelper.registerGemSet(ID_GREEN_SAPPHIRE);
 		RegistrationHelper.registerGemSet(ID_SAPPHIRE);
 
-		/* RegistrationHelper.registerMetalSet(ID_COPPER);
+		RegistrationHelper.registerMetalSet(ID_COPPER);
 		RegistrationHelper.registerMetalSet(ID_TIN);
 		RegistrationHelper.registerMetalSet(ID_SILVER);
-		RegistrationHelper.registerMetalSet(ID_BRASS); */
+		//RegistrationHelper.registerMetalSet(ID_BRASS);
 
 		RegistrationHelper.registerItem(ID_SCREWDRIVER);
 

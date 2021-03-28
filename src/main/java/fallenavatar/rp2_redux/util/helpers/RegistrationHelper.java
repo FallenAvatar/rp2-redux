@@ -87,11 +87,11 @@ public class RegistrationHelper {
             ITEMS.register(prefix + "_ingot", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
             ITEMS.register(prefix + "_nugget", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
         }
-        ITEMS.register(prefix + "_dust", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
-        ITEMS.register(prefix + "_gear", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
-        ITEMS.register(prefix + "_plate", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
+        //ITEMS.register(prefix + "_dust", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
+        //ITEMS.register(prefix + "_gear", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
+        //ITEMS.register(prefix + "_plate", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
 
-		ITEMS.register(prefix + "_block", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
+		//ITEMS.register(prefix + "_block", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
     }
     // endregion
 
@@ -113,12 +113,12 @@ public class RegistrationHelper {
             ITEMS.register(prefix, () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
         }
         // ITEMS.register(prefix + "_nugget", () -> new ItemCoFH(new Item.Properties().tab(group).rarity(rarity)));
-        ITEMS.register(prefix + "_dust", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
-        ITEMS.register(prefix + "_gear", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
+        // ITEMS.register(prefix + "_dust", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
+        // ITEMS.register(prefix + "_gear", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
         // ITEMS.register(prefix + "_plate", () -> new CountedItem(new Item.Properties().tab(group).rarity(rarity)));
         // ITEMS.register(prefix + "_coin", () -> new CoinItem(new Item.Properties().tab(group).rarity(rarity)));
 
-		ITEMS.register(prefix + "_block", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
+		//ITEMS.register(prefix + "_block", () -> new Item(new Item.Properties().tab(group).rarity(rarity)));
     }
     // endregion
 

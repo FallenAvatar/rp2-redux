@@ -55,27 +55,29 @@
 	"block.rp2_redux.nikolite_ore": "Nikolite Ore",
 
 	"_comment51": "==== Metals ====",
-	"item.rp2_redux.copper": "Copper",
+	"item.rp2_redux.copper_ingot": "Copper Ingot",
+	"item.rp2_redux.copper_nugget": "Copper Nugget",
 	"item.rp2_redux.copper_block": "Copper Block",
 	"block.rp2_redux.copper_block": "Copper Block",
 	"item.rp2_redux.copper_ore": "Copper Ore",
 	"block.rp2_redux.copper_ore": "Copper Ore",
 
-	"item.rp2_redux.tin": "Tin",
+	"item.rp2_redux.tin_ingot": "Tin Ingot",
+	"item.rp2_redux.tin_nugget": "Tin Nugget",
 	"item.rp2_redux.tin_block": "Tin Block",
 	"block.rp2_redux.tin_block": "Tin Ore",
 	"item.rp2_redux.tin_ore": "Tin Block",
 	"block.rp2_redux.tin_ore": "Tin Ore",
 
-	"item.rp2_redux.silver": "Silver",
+	"item.rp2_redux.silver_ingot": "Silver Ingot",
+	"item.rp2_redux.silver_nugget": "Silver Nugget",
 	"item.rp2_redux.silver_block": "Silver Block",
 	"block.rp2_redux.silver_block": "Silver Block",
 	"item.rp2_redux.silver_ore": "Silver Ore",
 	"block.rp2_redux.silver_ore": "Silver Ore",
 
-	"item.rp2_redux.brass": "Brass",
+	"item.rp2_redux.brass_ingot": "Brass Ingot",
 
-	"item.rp2_redux.tungsten": "Tungsten",
 	"item.rp2_redux.tungsten_ore": "Tungsten Ore",
 	"block.rp2_redux.tungsten_ore": "Tungsten Ore",
 

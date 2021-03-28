@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"GGG",
+		"G#G",
+		"GGG"
+	],
+	"key": {
+		"#": {
+			"item": "rp2_redux:copper_ingot"
+		},
+		"G": {
+			"tag": "forge:ingots/copper"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:copper_block"
+	}
+}
