@@ -2,7 +2,7 @@
 {
 	"type": "minecraft:smelting",
 	"ingredient": {
-	  "tag": "#forge:ores/copper"
+	  "item": "rp2_redux:copper_ore"
 	},
 	"result": "rp2_redux:copper_ingot",
 	"experience": 0.5,

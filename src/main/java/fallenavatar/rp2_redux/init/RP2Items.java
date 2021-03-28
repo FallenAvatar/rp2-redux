@@ -24,10 +24,10 @@ public class RP2Items {
 		RegistrationHelper.registerStandardToolSet(ID_GREEN_SAPPHIRE, MATERIAL_GREEN_SAPPHIRE);
 		RegistrationHelper.registerStandardToolSet(ID_SAPPHIRE, MATERIAL_SAPPHIRE);
 
-		RegistrationHelper.registerStandardToolSet(ID_WOOD, MATERIAL_RUBY, false, true);
-		RegistrationHelper.registerStandardToolSet(ID_STONE, MATERIAL_RUBY, false, true);
-		RegistrationHelper.registerStandardToolSet(ID_IRON, MATERIAL_RUBY, true, true);
-		RegistrationHelper.registerStandardToolSet(ID_GOLD, MATERIAL_RUBY, false, true);
-		RegistrationHelper.registerStandardToolSet(ID_DIAMOND, MATERIAL_RUBY, true, true);
+		RegistrationHelper.registerStandardToolSet(ID_WOOD, net.minecraft.item.ItemTier.WOOD, false, true);
+		RegistrationHelper.registerStandardToolSet(ID_STONE, net.minecraft.item.ItemTier.STONE, false, true);
+		RegistrationHelper.registerStandardToolSet(ID_IRON, net.minecraft.item.ItemTier.IRON, true, true);
+		RegistrationHelper.registerStandardToolSet(ID_GOLD, net.minecraft.item.ItemTier.GOLD, false, true);
+		RegistrationHelper.registerStandardToolSet(ID_DIAMOND, net.minecraft.item.ItemTier.DIAMOND, true, true);
 	}
 }
