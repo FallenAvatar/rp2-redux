@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" R ",
+		"RRR",
+		"WWW"
+	],
+	"key": {
+		"W": {
+			"item": "rp2_redux:stone_wafer"
+		},
+		"R": {
+			"item": "minecraft:redstone"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:stone_anode",
+		"count": 3
+	}
+}

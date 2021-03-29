@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" S ",
+		" R ",
+		" W "
+	],
+	"key": {
+		"S": {
+			"tag": "forge:stone"
+		},
+		"W": {
+			"item": "rp2_redux:stone_wafer"
+		},
+		"R": {
+			"item": "minecraft:redstone_torch"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:stone_pointer"
+	}
+}

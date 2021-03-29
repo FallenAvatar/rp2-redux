@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:block/orientable_with_bottom",
+	"textures": {
+		"front": "rp2_redux:block/machines/project_table-front",
+		"side": "rp2_redux:block/machines/project_table-side",
+		"top": "rp2_redux:block/machines/project_table-top",
+		"bottom": "rp2_redux:block/machines/project_table-bot"
+	}
+}

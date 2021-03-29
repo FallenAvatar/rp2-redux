@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"BBB",
+		"B B",
+		"BBB"
+	],
+	"key": {
+		"B": {
+			"item": "minecraft:brick"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:alloy_furnace"
+	}
+}

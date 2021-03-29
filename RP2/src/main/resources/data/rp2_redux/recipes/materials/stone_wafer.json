@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		"   ",
+		"SS "
+	],
+	"key": {
+		"S": {
+			"item": "minecraft:smooth_stone"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:stone_wafer",
+		"count": 4
+	}
+}

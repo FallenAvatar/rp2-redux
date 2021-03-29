@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"   ",
+		" R ",
+		" W "
+	],
+	"key": {
+		"W": {
+			"item": "rp2_redux:stone_wafer"
+		},
+		"R": {
+			"item": "minecraft:redstone"
+		}
+	},
+	"result": {
+		"item": "rp2_redux:stone_wire"
+	}
+}

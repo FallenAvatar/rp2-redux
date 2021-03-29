@@ -1,0 +1,7 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [{ "tag": "forge:string" }, { "tag": "forge:string" }, { "tag": "forge:string" }, { "tag": "forge:string" }, { "tag": "forge:string" }, { "tag": "forge:string" }, { "tag": "forge:string" }, { "tag": "forge:string" }, { "tag": "forge:string" }],
+	"result": {
+		"item": "rp2_redux:canvas"
+	}
+}

@@ -1,8 +1,0 @@
-{
-	"variants": {
-		"facing=east": { "model": "rp2_redux:block/project_table" },
-        "facing=south": { "model": "rp2_redux:block/project_table", "y": 90 },
-        "facing=west": { "model": "rp2_redux:block/project_table", "y": 180 },
-        "facing=north": { "model": "rp2_redux:block/project_table", "y": 270 }
-	}
-}
