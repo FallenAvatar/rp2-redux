@@ -1,0 +1,10 @@
+{
+	"java.dependency.syncWithFolderExplorer": true,
+	"java.dependency.packagePresentation": "flat",
+	"cSpell.words": [
+		"Comms",
+		"modloading",
+		"preinit"
+	],
+	"java.configuration.updateBuildConfiguration": "automatic"
+}
