@@ -1,16 +1,19 @@
 package fallenavatar.rp2_redux.world.biome;
 
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.util.ResourceLocation;
+import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_COPPER;
+import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_GREEN_SAPPHIRE;
+import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_NIKOLITE;
+import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_RUBY;
+import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_SAPPHIRE;
+import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_SILVER;
+import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_TIN;
+import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_TUNGSTEN;
+
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeGenerationSettings;
-import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraftforge.common.world.BiomeGenerationSettingsBuilder;
-import net.minecraftforge.common.world.MobSpawnInfoBuilder;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
-
-import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.*;
 
 public class RP2BiomeFeatures {
 	private RP2BiomeFeatures() {}

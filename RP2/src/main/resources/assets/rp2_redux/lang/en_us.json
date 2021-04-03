@@ -25,8 +25,12 @@
 	"_comment31": "==== Machines ====",
 	"item.rp2_redux.project_table": "Project Table",
 	"block.rp2_redux.project_table": "Project Table",
+
 	"item.rp2_redux.alloy_furnace": "Alloy Furnace",
 	"block.rp2_redux.alloy_furnace": "Alloy Furnace",
+	"info.rp2_redux.alloy_furnace.0": "Multipurpose table for augmenting, recharging, and refilling.",
+	"info.rp2_redux.alloy_furnace.1": "Storages may be filled using their respective slots.",
+	"info.rp2_redux.alloy_furnace.2": "Tinker on!",
 
 	"_comment41": "==== Gems/Dusts ====",
 	"item.rp2_redux.green_sapphire": "Green Sapphire",

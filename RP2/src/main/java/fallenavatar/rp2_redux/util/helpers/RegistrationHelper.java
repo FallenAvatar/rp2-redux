@@ -1,21 +1,17 @@
 package fallenavatar.rp2_redux.util.helpers;
 
 // Ripped straight from https://github.com/KingLemming/1.16/blob/master/ThermalCore/src/main/java/cofh/thermal/core/util/RegistrationHelper.java
-// Atleast until Lemming gets CofhCore ready for use
+// At least until Lemming gets CofhCore ready for use
 
 import com.google.common.base.Supplier;
 
-import io.netty.util.BooleanSupplier;
 import net.minecraft.block.Block;
-import net.minecraft.block.AbstractBlock.Properties;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
+import cofh.core.item.ItemCoFH;
+import cofh.lib.util.helpers.MathHelper;
 
-import static fallenavatar.rp2_redux.common.RP2IDs.*;
 import static fallenavatar.rp2_redux.common.RP2ItemGroups.*;
-import static fallenavatar.rp2_redux.common.RP2ItemTiers.*;
-
-import static fallenavatar.rp2_redux.util.constants.Constants.*;
 
 import static fallenavatar.rp2_redux.RP2ReduxMod.BLOCKS;
 import static fallenavatar.rp2_redux.RP2ReduxMod.ITEMS;
@@ -24,7 +20,7 @@ public class RegistrationHelper {
 	private RegistrationHelper() {}
 
 	 // region BLOCKS
-	 public static void registerBlock(String name, Supplier<Block> sup) {
+	public static void registerBlock(String name, Supplier<Block> sup) {
         registerBlock(name, sup, RP2_BLOCKS, Rarity.COMMON);
     }
 

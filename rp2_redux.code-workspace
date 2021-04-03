@@ -1,14 +1,33 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": ".",
+			"name": "Root"
 		},
 		{
-			"path": "src\\main\\resources"
+			"path": "RP2\\src\\main\\java",
+			"name": "RP2 Code"
 		},
 		{
-			"path": "src\\main\\java"
-		}
+			"path": "RP2\\src\\main\\resources",
+			"name": "RP2 Resources"
+		},
+		{
+			"path": "ThermalCore\\src\\main\\java",
+			"name": "ThermalCore Code"
+		},
+		{
+			"path": "ThermalCore\\src\\main\\resources",
+			"name": "ThermalCore Resources"
+		},
+		{
+			"path": "CoFHCore\\src\\main\\java",
+			"name": "CoFHCore Code"
+		},
+		{
+			"path": "CoFHCore\\src\\main\\resources",
+			"name": "CoFHCore Resources"
+		},
 	],
 	"settings": {
 		"java.dependency.syncWithFolderExplorer": true,

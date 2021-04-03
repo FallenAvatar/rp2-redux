@@ -1,8 +1,16 @@
 package fallenavatar.rp2_redux.world.gen.feature;
 
-// https://github.com/KingLemming/1.16/blob/dev/ThermalCore/src/main/java/cofh/thermal/core/world/gen/feature/ThermalFeatures.java
+import static fallenavatar.rp2_redux.RP2ReduxMod.BLOCKS;
+import static fallenavatar.rp2_redux.common.Constants.ID_RP2_REDUX;
+import static fallenavatar.rp2_redux.common.RP2IDs.ID_COPPER;
+import static fallenavatar.rp2_redux.common.RP2IDs.ID_GREEN_SAPPHIRE;
+import static fallenavatar.rp2_redux.common.RP2IDs.ID_NIKOLITE;
+import static fallenavatar.rp2_redux.common.RP2IDs.ID_RUBY;
+import static fallenavatar.rp2_redux.common.RP2IDs.ID_SAPPHIRE;
+import static fallenavatar.rp2_redux.common.RP2IDs.ID_SILVER;
+import static fallenavatar.rp2_redux.common.RP2IDs.ID_TIN;
+import static fallenavatar.rp2_redux.common.RP2IDs.ID_TUNGSTEN;
 
-import net.minecraft.block.Blocks;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
@@ -10,75 +18,28 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
-import net.minecraft.world.gen.feature.template.BlockMatchRuleTest;
-import net.minecraft.world.gen.feature.template.RuleTest;
 import net.minecraft.world.gen.placement.DepthAverageConfig;
 import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.TopSolidRangeConfig;
-
-import static fallenavatar.rp2_redux.common.Constants.*;
-import static fallenavatar.rp2_redux.common.RP2IDs.*;
-
-import static fallenavatar.rp2_redux.RP2ReduxMod.BLOCKS;
 
 public class RP2Features {
 	private RP2Features() {
 	}
 
+	private static ConfiguredFeature<?,?> registerOre(String name, int size, int depth_start, int depth_range, int count) {
+		return register("ore_"+name, new ConfiguredFeature<>(Feature.ORE,
+						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BLOCKS.get(name + "_ore").getDefaultState(), size))
+								.withPlacement(Placement.DEPTH_AVERAGE.configure(depthRange(depth_start, depth_range))).square().func_242731_b(count));
+	}
+
 	public static void setup() {
-		ORE_COPPER = register("ore_copper", Feature.ORE.configure(
-						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BLOCKS.get(ID_COPPER + "_ore").defaultBlockState(), 16))
-								.decorated(Placement.DEPTH_AVERAGE.configure(depthRange(32, 20))).squared().count(12));
-
-		ORE_TIN = register("ore_tin",
-				new ConfiguredFeature<>(Feature.ORE,
-						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-								BLOCKS.get(ID_TIN + "_ore").defaultBlockState(), 8))
-										.decorated(Placement.DEPTH_AVERAGE.configure(depthRange(40, 14))).squared()
-										.count(4));
-
-		ORE_SILVER = register("ore_silver",
-				new ConfiguredFeature<>(Feature.ORE,
-						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-								BLOCKS.get(ID_SILVER + "_ore").defaultBlockState(), 6))
-										.decorated(Placement.DEPTH_AVERAGE.configure(depthRange(16, 16))).squared()
-										.count(2));
-
-		ORE_TUNGSTEN = register("ore_tungsten",
-				new ConfiguredFeature<>(Feature.ORE,
-						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-								BLOCKS.get(ID_TUNGSTEN + "_ore").defaultBlockState(), 2))
-										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(8, 8))).squared()
-										.count(1));
-
-		ORE_NIKOLITE = register("ore_nikolite",
-				new ConfiguredFeature<>(Feature.ORE,
-						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-								BLOCKS.get(ID_NIKOLITE + "_ore").defaultBlockState(), 6))
-										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(10, 8))).squared()
-										.count(4));
-
-		ORE_GREEN_SAPPHIRE = register("ore_green_sapphire",
-				new ConfiguredFeature<>(Feature.ORE,
-						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-								BLOCKS.get(ID_GREEN_SAPPHIRE + "_ore").defaultBlockState(), 6))
-										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(10, 8))).squared()
-										.count(1));
-
-		ORE_RUBY = register("ore_ruby",
-				new ConfiguredFeature<>(Feature.ORE,
-						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-								BLOCKS.get(ID_RUBY + "_ore").defaultBlockState(), 3))
-										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(8, 8))).squared()
-										.count(3));
-
-		ORE_SAPPHIRE = register("ore_sapphire",
-				new ConfiguredFeature<>(Feature.ORE,
-						new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-								BLOCKS.get(ID_SAPPHIRE + "_ore").defaultBlockState(), 3))
-										.decorated(Placement.DEPTH_AVERAGE.configured(depthRange(14, 8))).squared()
-										.count(2));
-
+		ORE_COPPER = registerOre(ID_COPPER, 16, 32, 20, 12);
+		ORE_TIN = registerOre(ID_TIN, 8, 40, 14, 4);
+		ORE_SILVER = registerOre(ID_SILVER, 6, 16, 16, 2);
+		ORE_TUNGSTEN = registerOre(ID_TUNGSTEN, 2, 8, 8, 1);
+		ORE_NIKOLITE = registerOre(ID_NIKOLITE, 6, 10, 8, 4);
+		ORE_GREEN_SAPPHIRE = registerOre(ID_GREEN_SAPPHIRE, 6, 10, 8, 1);
+		ORE_RUBY = registerOre(ID_RUBY, 3, 8, 8, 3);
+		ORE_SAPPHIRE = registerOre(ID_SAPPHIRE, 3, 14, 8, 2);
 	}
 
 	private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> register(String key, ConfiguredFeature<FC, ?> configuredFeature) {
@@ -89,9 +50,9 @@ public class RP2Features {
 		return new DepthAverageConfig(base, spread);
 	}
 
-	private static TopSolidRangeConfig topRange(int min, int max) {
+	/*private static TopSolidRangeConfig topRange(int min, int max) {
 		return new TopSolidRangeConfig(min, min, max);
-	}
+	}*/
 
 	public static ConfiguredFeature<?, ?> ORE_COPPER;
 	public static ConfiguredFeature<?, ?> ORE_TIN;

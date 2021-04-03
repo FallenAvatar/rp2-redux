@@ -1,9 +1,14 @@
 package fallenavatar.rp2_redux.init;
 
 import fallenavatar.rp2_redux.util.helpers.RegistrationHelper;
+import cofh.lib.util.constants.ToolTypes;
+import net.minecraft.item.Item;
+import net.minecraft.item.Rarity;
+import fallenavatar.rp2_redux.item.WrenchItem;
 
 import static fallenavatar.rp2_redux.common.RP2IDs.*;
 import static fallenavatar.rp2_redux.common.RP2ItemTiers.*;
+import static fallenavatar.rp2_redux.common.RP2ItemGroups.*;
 
 public class RP2Items {
 	private RP2Items() {}
@@ -38,5 +43,8 @@ public class RP2Items {
 		RegistrationHelper.registerItem(ID_STONE_CATHODE);
 		RegistrationHelper.registerItem(ID_STONE_ANODE);
 		RegistrationHelper.registerItem(ID_STONE_POINTER);
+
+		RegistrationHelper.registerItem("wrench", () -> new WrenchItem(new Item.Properties().maxStackSize(1).group(RP2_ITEMS).addToolType(ToolTypes.WRENCH, 1)));
+		RegistrationHelper.registerItem(ID_BRASS+"_ingot");
 	}
 }

@@ -7,14 +7,14 @@ issueTrackerURL="https://github.com/FallenAvatar/rp2-redux/issues"
 [[mods]]
 	modId="rp2_redux"
 	version="${file.jarVersion}"
-	displayName="RP2 Redux"
+	displayName="RedPower2 Redux"
 	updateJSONURL="https://github.com/FallenAvatar/rp2-redux/raw/main/updates.json"
 	displayURL="https://github.com/FallenAvatar/rp2-redux"
 	logoFile="logo.png"
 	credits="Thanks for this mod goes to MinecraftForge, Team COFH, and Eloraam"
 	authors="FallenAvatar"
 	description='''
-	A recreation of RP2 in Modern mineCraft
+	A recreation of RedPower2 in modern MineCraft
 	'''
 
 [[dependencies.rp2_redux]]
@@ -28,5 +28,19 @@ issueTrackerURL="https://github.com/FallenAvatar/rp2-redux/issues"
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.rp2_redux]]
+    modId="cofh_core"
+    mandatory=true
+    versionRange="[1.2,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.rp2_redux]]
+    modId="thermal"
+    mandatory=true
+    versionRange="[1.2,)"
     ordering="NONE"
     side="BOTH"

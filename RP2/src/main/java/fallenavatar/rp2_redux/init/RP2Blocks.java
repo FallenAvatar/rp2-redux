@@ -12,7 +12,7 @@ import static fallenavatar.rp2_redux.common.RP2IDs.*;
 import static fallenavatar.rp2_redux.common.RP2ItemGroups.*;
 import static net.minecraft.block.AbstractBlock.Properties.from;
 import static fallenavatar.rp2_redux.RP2ReduxMod.TILE_ENTITIES;
-import static fallenavatar.rp2_redux.util.references.RP2References.*;
+import static fallenavatar.rp2_redux.init.RP2References.*;
 
 public class RP2Blocks {
 	private RP2Blocks() {}

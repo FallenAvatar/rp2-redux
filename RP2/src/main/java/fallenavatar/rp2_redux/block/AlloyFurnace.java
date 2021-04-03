@@ -2,10 +2,11 @@ package fallenavatar.rp2_redux.block;
 
 import javax.annotation.Nullable;
 
+import cofh.core.block.TileBlock4Way;
 import fallenavatar.rp2_redux.tileentity.AlloyFurnaceTile;
 
 // Ripped straight from https://github.com/KingLemming/1.16/blob/master/CoFHCore/src/main/java/cofh/core/block/Block4Way.java
-// Atleast until Lemming gets CofhCore ready for use
+// At least until Lemming gets CofhCore ready for use
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -16,12 +17,12 @@ import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockReader;
 
-public class AlloyFurnace extends Block4Way {
+public class AlloyFurnace extends TileBlock4Way {
 
 	public static final BooleanProperty LIT = BlockStateProperties.LIT;
 
     public AlloyFurnace(Properties properties) {
-        super(properties);
+        super(properties, () -> new AlloyFurnaceTile());
 		this.setDefaultState(this.getDefaultState().with(LIT, false));
     }
 
