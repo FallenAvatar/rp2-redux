@@ -1,11 +1,11 @@
-package fallenavatar.rp2_redux.util.managers;
+package fallenavatar.rp2_redux.core.util.managers;
 
 import cofh.lib.inventory.FalseIInventory;
 import cofh.thermal.lib.util.managers.SingleItemFuelManager;
 import cofh.thermal.lib.util.recipes.ThermalFuel;
 import cofh.thermal.lib.util.recipes.internal.IDynamoFuel;
-import fallenavatar.rp2_redux.init.RP2RecipeTypes;
-import fallenavatar.rp2_redux.util.recipes.FurnaceFuel;
+import fallenavatar.rp2_redux.core.init.RP2RecipeTypes;
+import fallenavatar.rp2_redux.core.util.recipes.FurnaceFuel;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static fallenavatar.rp2_redux.common.Constants.ID_RP2_REDUX;
+import static fallenavatar.rp2_redux.core.common.Constants.ID_RP2_REDUX;
 import static cofh.lib.util.constants.Constants.RF_PER_FURNACE_UNIT;
 import static java.util.Collections.emptyList;
 import static java.util.Collections.singletonList;

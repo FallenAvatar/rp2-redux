@@ -1,11 +1,11 @@
-package fallenavatar.rp2_redux.tileentity;
+package fallenavatar.rp2_redux.core.tileentity;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.tileentity.ITickableTileEntity;
 
-import static fallenavatar.rp2_redux.init.RP2References.*;
+import static fallenavatar.rp2_redux.core.init.RP2References.*;
 
 import java.util.List;
 
@@ -16,9 +16,9 @@ import javax.annotation.Nullable;
 import cofh.lib.fluid.IFluidStackAccess;
 import cofh.lib.inventory.ItemStorageCoFH;
 import cofh.thermal.lib.tileentity.MachineTileProcess;
-import fallenavatar.rp2_redux.inventory.container.AlloyFurnaceContainer;
-import fallenavatar.rp2_redux.util.managers.AlloyFurnaceRecipeManager;
-import fallenavatar.rp2_redux.util.managers.FurnaceFuelManager;
+import fallenavatar.rp2_redux.core.inventory.container.AlloyFurnaceContainer;
+import fallenavatar.rp2_redux.core.util.managers.AlloyFurnaceRecipeManager;
+import fallenavatar.rp2_redux.core.util.managers.FurnaceFuelManager;
 
 import static cofh.lib.util.helpers.ItemHelper.itemsEqual;
 import static cofh.lib.util.helpers.ItemHelper.itemsEqualWithTags;

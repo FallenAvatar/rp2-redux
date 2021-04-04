@@ -1,14 +1,14 @@
-package fallenavatar.rp2_redux.init;
+package fallenavatar.rp2_redux.core.init;
 
-import fallenavatar.rp2_redux.util.helpers.RegistrationHelper;
+import fallenavatar.rp2_redux.core.util.helpers.RegistrationHelper;
 import cofh.lib.util.constants.ToolTypes;
 import cofh.thermal.core.item.WrenchItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Rarity;
 
-import static fallenavatar.rp2_redux.common.RP2IDs.*;
-import static fallenavatar.rp2_redux.common.RP2ItemTiers.*;
-import static fallenavatar.rp2_redux.common.RP2ItemGroups.*;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.*;
+import static fallenavatar.rp2_redux.core.common.RP2ItemTiers.*;
+import static fallenavatar.rp2_redux.core.common.RP2ItemGroups.*;
 
 public class RP2Items {
 	private RP2Items() {}

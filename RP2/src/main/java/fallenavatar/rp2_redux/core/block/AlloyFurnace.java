@@ -1,9 +1,9 @@
-package fallenavatar.rp2_redux.block;
+package fallenavatar.rp2_redux.core.block;
 
 import javax.annotation.Nullable;
 
 import cofh.core.block.TileBlock4Way;
-import fallenavatar.rp2_redux.tileentity.AlloyFurnaceTile;
+import fallenavatar.rp2_redux.core.tileentity.AlloyFurnaceTile;
 
 // Ripped straight from https://github.com/KingLemming/1.16/blob/master/CoFHCore/src/main/java/cofh/core/block/Block4Way.java
 // At least until Lemming gets CofhCore ready for use

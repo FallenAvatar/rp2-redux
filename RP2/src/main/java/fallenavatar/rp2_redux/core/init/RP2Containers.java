@@ -1,11 +1,11 @@
-package fallenavatar.rp2_redux.init;
+package fallenavatar.rp2_redux.core.init;
 
 import cofh.core.util.ProxyUtils;
 
-import static fallenavatar.rp2_redux.RP2ReduxMod.CONTAINERS;
-import static fallenavatar.rp2_redux.common.RP2IDs.*;
+import static fallenavatar.rp2_redux.core.RP2ReduxMod.CONTAINERS;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.*;
 
-import fallenavatar.rp2_redux.inventory.container.AlloyFurnaceContainer;
+import fallenavatar.rp2_redux.core.inventory.container.AlloyFurnaceContainer;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 
 public class RP2Containers {

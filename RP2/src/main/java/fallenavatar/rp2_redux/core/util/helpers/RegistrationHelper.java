@@ -1,4 +1,4 @@
-package fallenavatar.rp2_redux.util.helpers;
+package fallenavatar.rp2_redux.core.util.helpers;
 
 // Ripped straight from https://github.com/KingLemming/1.16/blob/master/ThermalCore/src/main/java/cofh/thermal/core/util/RegistrationHelper.java
 // At least until Lemming gets CofhCore ready for use
@@ -11,10 +11,10 @@ import net.minecraftforge.fml.RegistryObject;
 import cofh.core.item.ItemCoFH;
 import cofh.lib.util.helpers.MathHelper;
 
-import static fallenavatar.rp2_redux.common.RP2ItemGroups.*;
+import static fallenavatar.rp2_redux.core.common.RP2ItemGroups.*;
 
-import static fallenavatar.rp2_redux.RP2ReduxMod.BLOCKS;
-import static fallenavatar.rp2_redux.RP2ReduxMod.ITEMS;
+import static fallenavatar.rp2_redux.core.RP2ReduxMod.BLOCKS;
+import static fallenavatar.rp2_redux.core.RP2ReduxMod.ITEMS;
 
 public class RegistrationHelper {
 	private RegistrationHelper() {}

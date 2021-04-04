@@ -1,16 +1,16 @@
-package fallenavatar.rp2_redux.inventory.container;
+package fallenavatar.rp2_redux.core.inventory.container;
 
 import cofh.core.inventory.container.TileContainer;
 import cofh.lib.inventory.container.slot.SlotCoFH;
 import cofh.lib.inventory.container.slot.SlotRemoveOnly;
 import cofh.lib.inventory.wrapper.InvWrapperCoFH;
-import fallenavatar.rp2_redux.tileentity.AlloyFurnaceTile;
+import fallenavatar.rp2_redux.core.tileentity.AlloyFurnaceTile;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static fallenavatar.rp2_redux.init.RP2References.ALLOY_FURNACE_CONTAINER;
+import static fallenavatar.rp2_redux.core.init.RP2References.ALLOY_FURNACE_CONTAINER;
 
 public class AlloyFurnaceContainer extends TileContainer {
 	public final AlloyFurnaceTile tile;

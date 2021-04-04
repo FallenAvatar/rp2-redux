@@ -1,4 +1,4 @@
-package fallenavatar.rp2_redux.block;
+package fallenavatar.rp2_redux.lib.block;
 
 // Ripped straight from https://github.com/KingLemming/1.16/blob/master/CoFHCore/src/main/java/cofh/core/block/Block4Way.java
 // Atleast until Lemming gets CofhCore ready for use
@@ -13,7 +13,7 @@ import net.minecraft.util.Rotation;
 
 import javax.annotation.Nullable;
 
-import static fallenavatar.rp2_redux.util.constants.Constants.FACING_HORIZONTAL;
+import static fallenavatar.rp2_redux.core.util.constants.Constants.FACING_HORIZONTAL;
 
 public class Block4Way extends Block {
 

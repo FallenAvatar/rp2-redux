@@ -1,9 +1,9 @@
-package fallenavatar.rp2_redux.event;
+package fallenavatar.rp2_redux.core.event;
 
-import static fallenavatar.rp2_redux.common.Constants.ID_RP2_REDUX;
+import static fallenavatar.rp2_redux.core.common.Constants.ID_RP2_REDUX;
 
-import fallenavatar.rp2_redux.common.RP2RecipeManagers;
-import fallenavatar.rp2_redux.world.biome.RP2BiomeFeatures;
+import fallenavatar.rp2_redux.core.common.RP2RecipeManagers;
+import fallenavatar.rp2_redux.core.world.biome.RP2BiomeFeatures;
 import net.minecraft.client.resources.ReloadListener;
 import net.minecraft.profiler.IProfiler;
 import net.minecraft.resources.IResourceManager;

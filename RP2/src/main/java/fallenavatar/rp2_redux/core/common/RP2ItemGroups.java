@@ -1,13 +1,13 @@
-package fallenavatar.rp2_redux.common;
+package fallenavatar.rp2_redux.core.common;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-import static fallenavatar.rp2_redux.RP2ReduxMod.ITEMS;
-import static fallenavatar.rp2_redux.common.Constants.*;
-import static fallenavatar.rp2_redux.common.RP2IDs.*;
+import static fallenavatar.rp2_redux.core.RP2ReduxMod.ITEMS;
+import static fallenavatar.rp2_redux.core.common.Constants.*;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.*;
 
 public class RP2ItemGroups {
 	private RP2ItemGroups() {}

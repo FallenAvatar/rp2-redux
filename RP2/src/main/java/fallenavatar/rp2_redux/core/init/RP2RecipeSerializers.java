@@ -1,10 +1,10 @@
-package fallenavatar.rp2_redux.init;
+package fallenavatar.rp2_redux.core.init;
 
-import static fallenavatar.rp2_redux.RP2ReduxMod.RECIPE_SERIALIZERS;
-import static fallenavatar.rp2_redux.init.RP2RecipeTypes.ID_RECIPE_ALLOY_FURNACE;
+import static fallenavatar.rp2_redux.core.RP2ReduxMod.RECIPE_SERIALIZERS;
+import static fallenavatar.rp2_redux.core.init.RP2RecipeTypes.ID_RECIPE_ALLOY_FURNACE;
 
-import fallenavatar.rp2_redux.util.recipes.AlloyFurnaceRecipe;
-import fallenavatar.rp2_redux.util.recipes.RP2RecipeSerializer;
+import fallenavatar.rp2_redux.core.util.recipes.AlloyFurnaceRecipe;
+import fallenavatar.rp2_redux.core.util.recipes.RP2RecipeSerializer;
 
 public class RP2RecipeSerializers {
 	private RP2RecipeSerializers() {}

@@ -1,10 +1,10 @@
-package fallenavatar.rp2_redux.init;
+package fallenavatar.rp2_redux.core.init;
 
-import static fallenavatar.rp2_redux.common.Constants.*;
-import static fallenavatar.rp2_redux.common.RP2IDs.*;
+import static fallenavatar.rp2_redux.core.common.Constants.*;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.*;
 
-import fallenavatar.rp2_redux.inventory.container.AlloyFurnaceContainer;
-import fallenavatar.rp2_redux.tileentity.AlloyFurnaceTile;
+import fallenavatar.rp2_redux.core.inventory.container.AlloyFurnaceContainer;
+import fallenavatar.rp2_redux.core.tileentity.AlloyFurnaceTile;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.tileentity.TileEntityType;

@@ -1,11 +1,11 @@
-package fallenavatar.rp2_redux.client.gui;
+package fallenavatar.rp2_redux.core.client.gui;
 
-import static fallenavatar.rp2_redux.common.Constants.ID_RP2_REDUX;
+import static fallenavatar.rp2_redux.core.common.Constants.ID_RP2_REDUX;
 
 import cofh.lib.util.helpers.StringHelper;
 import cofh.thermal.core.client.gui.ThermalGuiHelper;
 import cofh.thermal.lib.client.gui.ThermalTileScreenBase;
-import fallenavatar.rp2_redux.inventory.container.AlloyFurnaceContainer;
+import fallenavatar.rp2_redux.core.inventory.container.AlloyFurnaceContainer;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;

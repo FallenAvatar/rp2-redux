@@ -1,6 +1,6 @@
-package fallenavatar.rp2_redux.compat.jei;
+package fallenavatar.rp2_redux.core.compat.jei;
 
-import fallenavatar.rp2_redux.util.recipes.RP2Recipe;
+import fallenavatar.rp2_redux.core.util.recipes.RP2Recipe;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import mezz.jei.api.gui.drawable.IDrawable;

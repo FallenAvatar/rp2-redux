@@ -1,18 +1,18 @@
-package fallenavatar.rp2_redux.init;
+package fallenavatar.rp2_redux.core.init;
 
-import fallenavatar.rp2_redux.block.AlloyFurnace;
-import fallenavatar.rp2_redux.block.Block4Way;
-import fallenavatar.rp2_redux.tileentity.AlloyFurnaceTile;
-import fallenavatar.rp2_redux.util.helpers.RegistrationHelper;
+import fallenavatar.rp2_redux.core.block.AlloyFurnace;
+import fallenavatar.rp2_redux.lib.block.Block4Way;
+import fallenavatar.rp2_redux.core.tileentity.AlloyFurnaceTile;
+import fallenavatar.rp2_redux.core.util.helpers.RegistrationHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.tileentity.TileEntityType;
 
-import static fallenavatar.rp2_redux.common.RP2IDs.*;
-import static fallenavatar.rp2_redux.common.RP2ItemGroups.*;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.*;
+import static fallenavatar.rp2_redux.core.common.RP2ItemGroups.*;
 import static net.minecraft.block.AbstractBlock.Properties.from;
-import static fallenavatar.rp2_redux.RP2ReduxMod.TILE_ENTITIES;
-import static fallenavatar.rp2_redux.init.RP2References.*;
+import static fallenavatar.rp2_redux.core.RP2ReduxMod.TILE_ENTITIES;
+import static fallenavatar.rp2_redux.core.init.RP2References.*;
 
 public class RP2Blocks {
 	private RP2Blocks() {}

@@ -1,4 +1,4 @@
-package fallenavatar.rp2_redux.util.managers;
+package fallenavatar.rp2_redux.core.util.managers;
 
 import cofh.lib.fluid.IFluidStackAccess;
 import cofh.lib.inventory.FalseIInventory;
@@ -11,8 +11,8 @@ import cofh.thermal.lib.util.recipes.IThermalInventory;
 import cofh.thermal.lib.util.recipes.ThermalCatalyst;
 import cofh.thermal.lib.util.recipes.ThermalRecipe;
 import cofh.thermal.lib.util.recipes.internal.*;
-import fallenavatar.rp2_redux.init.RP2RecipeTypes;
-import fallenavatar.rp2_redux.util.recipes.RP2Recipe;
+import fallenavatar.rp2_redux.core.init.RP2RecipeTypes;
+import fallenavatar.rp2_redux.core.util.recipes.RP2Recipe;
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
 import net.minecraft.item.ItemStack;

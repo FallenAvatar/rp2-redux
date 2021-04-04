@@ -1,4 +1,4 @@
-package fallenavatar.rp2_redux.compat.jei;
+package fallenavatar.rp2_redux.core.compat.jei;
 
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
@@ -13,14 +13,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.RecipeManager;
 import net.minecraft.util.ResourceLocation;
 
-import static fallenavatar.rp2_redux.common.Constants.ID_RP2_REDUX;
-import static fallenavatar.rp2_redux.init.RP2RecipeTypes.ID_RECIPE_ALLOY_FURNACE;
-import static fallenavatar.rp2_redux.init.RP2RecipeTypes.RECIPE_ALLOY_FURNACE;
-import static fallenavatar.rp2_redux.init.RP2References.ALLOY_FURNACE;
-import static fallenavatar.rp2_redux.init.RP2References.PROJECT_TABLE;
+import static fallenavatar.rp2_redux.core.common.Constants.ID_RP2_REDUX;
+import static fallenavatar.rp2_redux.core.init.RP2RecipeTypes.ID_RECIPE_ALLOY_FURNACE;
+import static fallenavatar.rp2_redux.core.init.RP2RecipeTypes.RECIPE_ALLOY_FURNACE;
+import static fallenavatar.rp2_redux.core.init.RP2References.ALLOY_FURNACE;
+import static fallenavatar.rp2_redux.core.init.RP2References.PROJECT_TABLE;
 
-import fallenavatar.rp2_redux.client.gui.AlloyFurnaceScreen;
-import fallenavatar.rp2_redux.compat.jei.machine.AlloyFurnaceRecipeCategory;
+import fallenavatar.rp2_redux.core.client.gui.AlloyFurnaceScreen;
+import fallenavatar.rp2_redux.core.compat.jei.machine.AlloyFurnaceRecipeCategory;
 
 @JeiPlugin
 public class RP2JeiPlugin implements IModPlugin {

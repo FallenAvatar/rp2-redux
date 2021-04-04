@@ -1,13 +1,13 @@
-package fallenavatar.rp2_redux.world.biome;
+package fallenavatar.rp2_redux.core.world.biome;
 
-import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_COPPER;
-import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_GREEN_SAPPHIRE;
-import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_NIKOLITE;
-import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_RUBY;
-import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_SAPPHIRE;
-import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_SILVER;
-import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_TIN;
-import static fallenavatar.rp2_redux.world.gen.feature.RP2Features.ORE_TUNGSTEN;
+import static fallenavatar.rp2_redux.core.world.gen.feature.RP2Features.ORE_COPPER;
+import static fallenavatar.rp2_redux.core.world.gen.feature.RP2Features.ORE_GREEN_SAPPHIRE;
+import static fallenavatar.rp2_redux.core.world.gen.feature.RP2Features.ORE_NIKOLITE;
+import static fallenavatar.rp2_redux.core.world.gen.feature.RP2Features.ORE_RUBY;
+import static fallenavatar.rp2_redux.core.world.gen.feature.RP2Features.ORE_SAPPHIRE;
+import static fallenavatar.rp2_redux.core.world.gen.feature.RP2Features.ORE_SILVER;
+import static fallenavatar.rp2_redux.core.world.gen.feature.RP2Features.ORE_TIN;
+import static fallenavatar.rp2_redux.core.world.gen.feature.RP2Features.ORE_TUNGSTEN;
 
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeGenerationSettings;

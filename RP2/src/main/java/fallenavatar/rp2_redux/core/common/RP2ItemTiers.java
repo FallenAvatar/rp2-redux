@@ -1,10 +1,10 @@
-package fallenavatar.rp2_redux.common;
+package fallenavatar.rp2_redux.core.common;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
-import static fallenavatar.rp2_redux.RP2ReduxMod.ITEMS;
-import static fallenavatar.rp2_redux.common.RP2IDs.*;
+import static fallenavatar.rp2_redux.core.RP2ReduxMod.ITEMS;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.*;
 
 public class RP2ItemTiers {
 	private RP2ItemTiers() {}

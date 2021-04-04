@@ -1,4 +1,4 @@
-package fallenavatar.rp2_redux.util.recipes;
+package fallenavatar.rp2_redux.core.util.recipes;
 
 
 import cofh.lib.util.recipes.SerializableRecipe;

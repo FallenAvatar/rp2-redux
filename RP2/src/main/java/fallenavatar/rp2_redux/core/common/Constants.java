@@ -1,4 +1,4 @@
-package fallenavatar.rp2_redux.common;
+package fallenavatar.rp2_redux.core.common;
 
 public class Constants {
 	private Constants() { }

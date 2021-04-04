@@ -1,4 +1,4 @@
-package fallenavatar.rp2_redux.common;
+package fallenavatar.rp2_redux.core.common;
 
 import net.minecraft.item.crafting.RecipeManager;
 
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cofh.thermal.lib.util.managers.IManager;
-import fallenavatar.rp2_redux.RP2ReduxMod;
+import fallenavatar.rp2_redux.core.RP2ReduxMod;
 
 public class RP2RecipeManagers {
 

@@ -1,4 +1,4 @@
-package fallenavatar.rp2_redux;
+package fallenavatar.rp2_redux.core;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.gui.ScreenManager;
@@ -23,23 +23,23 @@ import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import fallenavatar.rp2_redux.client.gui.AlloyFurnaceScreen;
-import fallenavatar.rp2_redux.init.RP2Blocks;
-import fallenavatar.rp2_redux.init.RP2Containers;
-import fallenavatar.rp2_redux.init.RP2Items;
-import fallenavatar.rp2_redux.init.RP2RecipeManagers;
-import fallenavatar.rp2_redux.init.RP2RecipeSerializers;
-import fallenavatar.rp2_redux.init.RP2RecipeTypes;
+import fallenavatar.rp2_redux.core.client.gui.AlloyFurnaceScreen;
+import fallenavatar.rp2_redux.core.init.RP2Blocks;
+import fallenavatar.rp2_redux.core.init.RP2Containers;
+import fallenavatar.rp2_redux.core.init.RP2Items;
+import fallenavatar.rp2_redux.core.init.RP2RecipeManagers;
+import fallenavatar.rp2_redux.core.init.RP2RecipeSerializers;
+import fallenavatar.rp2_redux.core.init.RP2RecipeTypes;
 import cofh.core.util.Proxy;
 import cofh.core.util.ProxyClient;
 import cofh.lib.util.DeferredRegisterCoFH;
-import fallenavatar.rp2_redux.world.biome.RP2BiomeFeatures;
-import fallenavatar.rp2_redux.world.gen.feature.RP2Features;
+import fallenavatar.rp2_redux.core.world.biome.RP2BiomeFeatures;
+import fallenavatar.rp2_redux.core.world.gen.feature.RP2Features;
 
 import java.util.stream.Collectors;
 
-import static fallenavatar.rp2_redux.common.Constants.*;
-import static fallenavatar.rp2_redux.init.RP2References.ALLOY_FURNACE_CONTAINER;
+import static fallenavatar.rp2_redux.core.common.Constants.*;
+import static fallenavatar.rp2_redux.core.init.RP2References.ALLOY_FURNACE_CONTAINER;
 
 @Mod(ID_RP2_REDUX)
 public class RP2ReduxMod {

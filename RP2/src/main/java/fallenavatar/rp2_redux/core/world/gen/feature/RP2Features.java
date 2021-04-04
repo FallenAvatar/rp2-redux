@@ -1,15 +1,15 @@
-package fallenavatar.rp2_redux.world.gen.feature;
+package fallenavatar.rp2_redux.core.world.gen.feature;
 
-import static fallenavatar.rp2_redux.RP2ReduxMod.BLOCKS;
-import static fallenavatar.rp2_redux.common.Constants.ID_RP2_REDUX;
-import static fallenavatar.rp2_redux.common.RP2IDs.ID_COPPER;
-import static fallenavatar.rp2_redux.common.RP2IDs.ID_GREEN_SAPPHIRE;
-import static fallenavatar.rp2_redux.common.RP2IDs.ID_NIKOLITE;
-import static fallenavatar.rp2_redux.common.RP2IDs.ID_RUBY;
-import static fallenavatar.rp2_redux.common.RP2IDs.ID_SAPPHIRE;
-import static fallenavatar.rp2_redux.common.RP2IDs.ID_SILVER;
-import static fallenavatar.rp2_redux.common.RP2IDs.ID_TIN;
-import static fallenavatar.rp2_redux.common.RP2IDs.ID_TUNGSTEN;
+import static fallenavatar.rp2_redux.core.RP2ReduxMod.BLOCKS;
+import static fallenavatar.rp2_redux.core.common.Constants.ID_RP2_REDUX;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.ID_COPPER;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.ID_GREEN_SAPPHIRE;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.ID_NIKOLITE;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.ID_RUBY;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.ID_SAPPHIRE;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.ID_SILVER;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.ID_TIN;
+import static fallenavatar.rp2_redux.core.common.RP2IDs.ID_TUNGSTEN;
 
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;

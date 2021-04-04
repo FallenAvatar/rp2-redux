@@ -1,8 +1,8 @@
 
-package fallenavatar.rp2_redux.util.recipes;
+package fallenavatar.rp2_redux.core.util.recipes;
 
 import cofh.thermal.lib.util.recipes.ThermalFuel;
-import fallenavatar.rp2_redux.init.RP2RecipeTypes;
+import fallenavatar.rp2_redux.core.init.RP2RecipeTypes;
 import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.item.crafting.Ingredient;
@@ -14,7 +14,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 import static cofh.thermal.core.ThermalCore.RECIPE_SERIALIZERS;
-import static fallenavatar.rp2_redux.init.RP2RecipeTypes.ID_FUEL_FURNACE;;
+import static fallenavatar.rp2_redux.core.init.RP2RecipeTypes.ID_FUEL_FURNACE;;
 
 public class FurnaceFuel extends ThermalFuel {
 

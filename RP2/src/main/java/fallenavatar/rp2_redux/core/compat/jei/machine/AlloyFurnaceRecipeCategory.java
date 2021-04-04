@@ -1,10 +1,10 @@
-package fallenavatar.rp2_redux.compat.jei.machine;
+package fallenavatar.rp2_redux.core.compat.jei.machine;
 
 import cofh.thermal.lib.compat.jei.Drawables;
 import cofh.thermal.lib.compat.jei.ThermalRecipeCategory;
-import fallenavatar.rp2_redux.client.gui.AlloyFurnaceScreen;
-import fallenavatar.rp2_redux.compat.jei.RP2RecipeCategory;
-import fallenavatar.rp2_redux.util.recipes.AlloyFurnaceRecipe;
+import fallenavatar.rp2_redux.core.client.gui.AlloyFurnaceScreen;
+import fallenavatar.rp2_redux.core.compat.jei.RP2RecipeCategory;
+import fallenavatar.rp2_redux.core.util.recipes.AlloyFurnaceRecipe;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.gui.drawable.IDrawableAnimated;
@@ -19,7 +19,7 @@ import java.util.List;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 import static cofh.lib.util.helpers.StringHelper.getTextComponent;
-import static fallenavatar.rp2_redux.init.RP2References.ALLOY_FURNACE;
+import static fallenavatar.rp2_redux.core.init.RP2References.ALLOY_FURNACE;
 
 public class AlloyFurnaceRecipeCategory extends RP2RecipeCategory<AlloyFurnaceRecipe> {
 

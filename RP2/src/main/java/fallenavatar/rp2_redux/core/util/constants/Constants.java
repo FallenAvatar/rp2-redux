@@ -1,4 +1,4 @@
-package fallenavatar.rp2_redux.util.constants;
+package fallenavatar.rp2_redux.core.util.constants;
 
 // Ripped straight from https://github.com/KingLemming/1.16/blob/master/CoFHCore/src/main/java/cofh/core/util/constants/Constants.java
 // Atleast until Lemming gets CofhCore ready for use
@@ -14,7 +14,7 @@ import net.minecraft.util.Direction.Plane;
 import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.FluidStack;
 
-import static fallenavatar.rp2_redux.common.Constants.*;
+import static fallenavatar.rp2_redux.core.common.Constants.*;
 import static net.minecraft.inventory.EquipmentSlotType.*;
 
 public class Constants {

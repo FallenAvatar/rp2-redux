@@ -1,11 +1,11 @@
-package fallenavatar.rp2_redux.init;
+package fallenavatar.rp2_redux.core.init;
 
 import cofh.lib.util.recipes.SerializableRecipeType;
-import fallenavatar.rp2_redux.util.recipes.AlloyFurnaceRecipe;
-import fallenavatar.rp2_redux.util.recipes.FurnaceFuel;
+import fallenavatar.rp2_redux.core.util.recipes.AlloyFurnaceRecipe;
+import fallenavatar.rp2_redux.core.util.recipes.FurnaceFuel;
 import net.minecraft.util.ResourceLocation;
 
-import static fallenavatar.rp2_redux.common.Constants.ID_RP2_REDUX;
+import static fallenavatar.rp2_redux.core.common.Constants.ID_RP2_REDUX;
 
 public class RP2RecipeTypes {
 	private RP2RecipeTypes() {}
