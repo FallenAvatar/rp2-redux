@@ -2,6 +2,7 @@ package fallenavatar.rp2_redux.compat.jei;
 
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
+import mezz.jei.api.constants.VanillaRecipeCategoryUid;
 import mezz.jei.api.registration.IGuiHandlerRegistration;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
@@ -16,6 +17,7 @@ import static fallenavatar.rp2_redux.common.Constants.ID_RP2_REDUX;
 import static fallenavatar.rp2_redux.init.RP2RecipeTypes.ID_RECIPE_ALLOY_FURNACE;
 import static fallenavatar.rp2_redux.init.RP2RecipeTypes.RECIPE_ALLOY_FURNACE;
 import static fallenavatar.rp2_redux.init.RP2References.ALLOY_FURNACE;
+import static fallenavatar.rp2_redux.init.RP2References.PROJECT_TABLE;
 
 import fallenavatar.rp2_redux.client.gui.AlloyFurnaceScreen;
 import fallenavatar.rp2_redux.compat.jei.machine.AlloyFurnaceRecipeCategory;
@@ -37,24 +39,23 @@ public class RP2JeiPlugin implements IModPlugin {
 
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
-
         registration.addRecipeCategories(new AlloyFurnaceRecipeCategory(registration.getJeiHelpers().getGuiHelper(), new ItemStack(ALLOY_FURNACE), ID_RECIPE_ALLOY_FURNACE));
     }
 
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
-        registration.addRecipeClickArea(AlloyFurnaceScreen.class, 94, 34, 24, 16, ID_RECIPE_ALLOY_FURNACE);
+        registration.addRecipeClickArea(AlloyFurnaceScreen.class, 107, 34, 24, 16, ID_RECIPE_ALLOY_FURNACE);
     }
 
-    @Override
+	@Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
         registration.addRecipeCatalyst(new ItemStack(ALLOY_FURNACE), ID_RECIPE_ALLOY_FURNACE);
+		registration.addRecipeCatalyst(new ItemStack(PROJECT_TABLE), VanillaRecipeCategoryUid.CRAFTING);
     }
 
     @Override
     public ResourceLocation getPluginUid() {
-
-        return new ResourceLocation(ID_RP2_REDUX, "expansion");
+        return new ResourceLocation(ID_RP2_REDUX, "jei");
     }
 
     // region HELPERS

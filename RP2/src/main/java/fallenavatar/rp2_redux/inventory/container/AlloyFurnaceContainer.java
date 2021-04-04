@@ -22,12 +22,12 @@ public class AlloyFurnaceContainer extends TileContainer {
 
 		InvWrapperCoFH tileInv = new InvWrapperCoFH(this.tile.getItemInv());
 
-        addSlot(new SlotCoFH(tileInv, 0, 17, 42));
-		addSlot(new SlotRemoveOnly(tileInv, 1, 142, 36));
-
 		for( int i=0; i<9; i++ ) {
-			addSlot(new SlotCoFH(tileInv, 2+i, 48+((i%3)*18), 17+((i/3)*18)));
+			addSlot(new SlotCoFH(tileInv, i, 48+((i%3)*18), 17+((i/3)*18)));
 		}
+
+		addSlot(new SlotCoFH(tileInv, 9, 17, 42));
+		addSlot(new SlotRemoveOnly(tileInv, 10, 142, 36));
 
 		bindPlayerInventory(inventory);
     }

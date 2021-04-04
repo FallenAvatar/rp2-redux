@@ -20,4 +20,7 @@ public class RP2References {
     public static final TileEntityType<AlloyFurnaceTile> ALLOY_FURNACE_TILE = null;
 	@ObjectHolder(ID_ALLOY_FURNACE)
     public static final ContainerType<AlloyFurnaceContainer> ALLOY_FURNACE_CONTAINER = null;
+
+	@ObjectHolder(ID_PROJECT_TABLE)
+    public static final Block PROJECT_TABLE = null;
 }

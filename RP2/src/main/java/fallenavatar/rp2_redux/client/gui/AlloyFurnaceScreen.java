@@ -3,6 +3,7 @@ package fallenavatar.rp2_redux.client.gui;
 import static fallenavatar.rp2_redux.common.Constants.ID_RP2_REDUX;
 
 import cofh.lib.util.helpers.StringHelper;
+import cofh.thermal.core.client.gui.ThermalGuiHelper;
 import cofh.thermal.lib.client.gui.ThermalTileScreenBase;
 import fallenavatar.rp2_redux.inventory.container.AlloyFurnaceContainer;
 import net.minecraft.entity.player.PlayerInventory;

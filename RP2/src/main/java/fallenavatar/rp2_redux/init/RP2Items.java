@@ -2,9 +2,9 @@ package fallenavatar.rp2_redux.init;
 
 import fallenavatar.rp2_redux.util.helpers.RegistrationHelper;
 import cofh.lib.util.constants.ToolTypes;
+import cofh.thermal.core.item.WrenchItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Rarity;
-import fallenavatar.rp2_redux.item.WrenchItem;
 
 import static fallenavatar.rp2_redux.common.RP2IDs.*;
 import static fallenavatar.rp2_redux.common.RP2ItemTiers.*;

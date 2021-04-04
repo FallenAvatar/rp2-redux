@@ -15,11 +15,13 @@ public abstract class RP2Recipe extends SerializableRecipe {
     protected final List<ItemStack> outputItems = new ArrayList<>();
 
     protected float xp;
+	protected int energy;
 
-    protected RP2Recipe(ResourceLocation recipeId, float xp, List<Ingredient> inputItems, List<ItemStack> outputItems) {
+    protected RP2Recipe(ResourceLocation recipeId, float xp, int energy, List<Ingredient> inputItems, List<ItemStack> outputItems) {
         super(recipeId);
 
         this.xp = Math.max(0.0F, xp);
+		this.energy = energy;
 
         if (inputItems != null) {
             this.inputItems.addAll(inputItems);
@@ -37,6 +39,11 @@ public abstract class RP2Recipe extends SerializableRecipe {
     }
 
     // region GETTERS
+	public int getEnergy() {
+
+        return energy;
+    }
+
     public List<Ingredient> getInputItems() {
 
         return inputItems;
