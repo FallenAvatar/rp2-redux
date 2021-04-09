@@ -22,7 +22,7 @@ minecraft {
     mappings channel: 'snapshot', version: "${mcp_mappings}"
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
-	evaluationDependsOn(':ThermalCore')
+	evaluationDependsOn(':CoFHCore')
 
     runs {
         data {
@@ -40,9 +40,6 @@ minecraft {
             mods {
                 CoFHCore {
                     source findProject(':CoFHCore').sourceSets.main
-                }
-				ThermalCore {
-                    source findProject(':ThermalCore').sourceSets.main
                 }
                 RP2 {
                     source findProject(':RP2').sourceSets.main
@@ -74,12 +71,6 @@ dependencies {
 
 	if (findProject(':CoFHCore') != null) {
         compile project(':CoFHCore')
-    } else {
-        // TODO: Maven!
-    }
-
-	if (findProject(':ThermalCore') != null) {
-        compile project(':ThermalCore')
     } else {
         // TODO: Maven!
     }

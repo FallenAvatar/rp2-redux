@@ -37,10 +37,3 @@ issueTrackerURL="https://github.com/FallenAvatar/rp2-redux/issues"
     versionRange="[1.2,)"
     ordering="NONE"
     side="BOTH"
-
-[[dependencies.rp2_redux]]
-    modId="thermal"
-    mandatory=true
-    versionRange="[1.2,)"
-    ordering="NONE"
-    side="BOTH"

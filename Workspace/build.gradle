@@ -58,9 +58,6 @@ minecraft {
                 CoFHCore {
                     source project(':CoFHCore').sourceSets.main
                 }
-				ThermalCore {
-                    source project(':ThermalCore').sourceSets.main
-                }
                 RP2 {
                     source project(':RP2').sourceSets.main
                 }
@@ -81,9 +78,6 @@ minecraft {
             mods {
                 CoFHCore {
                     source project(':CoFHCore').sourceSets.main
-                }
-				ThermalCore {
-                    source project(':ThermalCore').sourceSets.main
                 }
                 RP2 {
                     source project(':RP2').sourceSets.main

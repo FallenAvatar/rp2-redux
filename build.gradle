@@ -8,7 +8,6 @@ if (hasProperty('buildScan')) {
 gradle.projectsEvaluated{
     def projects = [
             "RP2",
-			"ThermalCore",
             "CoFHCore"
     ]
     project.tasks.create('assembleAll') {
