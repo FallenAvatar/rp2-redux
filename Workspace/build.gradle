@@ -42,6 +42,10 @@ minecraft {
     mappings channel: 'snapshot', version: "${mcp_mappings}"
     //accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
+	evaluationDependsOn(':CoFHCore')
+	evaluationDependsOn(':ThermalCore')
+	evaluationDependsOn(':RP2')
+
     runs {
         client {
             workingDirectory project.file('run')
