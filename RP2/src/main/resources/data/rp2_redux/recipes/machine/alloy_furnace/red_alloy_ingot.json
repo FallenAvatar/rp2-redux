@@ -1,0 +1,30 @@
+{
+	"type": "rp2_redux:alloy_furnace",
+	"input": [
+	  {
+		"value": [
+		  {
+			"tag": "forge:ingots/iron"
+		  },
+		  {
+			"tag": "forge:dusts/iron"
+		  }
+		],
+		"count": 1
+	  },
+	  {
+		"value": [
+		  {
+			"tag": "forge:dusts/redstone"
+		  }
+		],
+		"count": 4
+	  }
+	],
+	"result": [
+	  {
+		"item": "rp2_redux:red_alloy_ingot",
+		"count": 1
+	  }
+	]
+  }

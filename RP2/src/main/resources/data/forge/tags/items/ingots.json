@@ -3,6 +3,9 @@
 	"values": [
 		"#forge:ingots/copper",
 		"#forge:ingots/silver",
-		"#forge:ingots/tin"
+		"#forge:ingots/tin",
+		"#forge:ingots/brass",
+		"#forge:ingots/red_alloy",
+		"#forge:ingots/blue_alloy"
 	]
 }

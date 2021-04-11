@@ -1,7 +1,0 @@
-rootProject.name = 'rp2_redux'
-include 'CoFHCore'
-include 'ThermalCore'
-
-include 'RP2'
-
-include 'Workspace'
