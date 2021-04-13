@@ -20,6 +20,7 @@ import static fallenavatar.rp2_redux.core.init.RP2References.ALLOY_FURNACE;
 import static fallenavatar.rp2_redux.core.init.RP2References.PROJECT_TABLE;
 
 import fallenavatar.rp2_redux.core.client.gui.AlloyFurnaceScreen;
+import fallenavatar.rp2_redux.core.client.gui.ProjectTableScreen;
 import fallenavatar.rp2_redux.core.compat.jei.machine.AlloyFurnaceRecipeCategory;
 
 @JeiPlugin
@@ -45,6 +46,7 @@ public class RP2JeiPlugin implements IModPlugin {
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
         registration.addRecipeClickArea(AlloyFurnaceScreen.class, 107, 34, 24, 16, ID_RECIPE_ALLOY_FURNACE);
+		registration.addRecipeClickArea(ProjectTableScreen.class, 107, 34, 24, 16, VanillaRecipeCategoryUid.CRAFTING);
     }
 
 	@Override

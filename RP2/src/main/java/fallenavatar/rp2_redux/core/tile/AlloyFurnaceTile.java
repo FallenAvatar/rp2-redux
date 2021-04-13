@@ -13,15 +13,11 @@ import static cofh.lib.util.StorageGroup.*;
 
 import javax.annotation.Nullable;
 
-import cofh.lib.fluid.IFluidStackAccess;
 import cofh.lib.inventory.ItemStorageCoFH;
 import cofh.thermal.lib.tileentity.MachineTileProcess;
 import fallenavatar.rp2_redux.core.inventory.container.AlloyFurnaceContainer;
 import fallenavatar.rp2_redux.core.util.managers.AlloyFurnaceRecipeManager;
 import fallenavatar.rp2_redux.core.util.managers.FurnaceFuelManager;
-
-import static cofh.lib.util.helpers.ItemHelper.itemsEqual;
-import static cofh.lib.util.helpers.ItemHelper.itemsEqualWithTags;
 
 public class AlloyFurnaceTile extends MachineTileProcess {
 	protected ItemStorageCoFH fuelSlot = new ItemStorageCoFH(item -> filter.valid(item) && FurnaceFuelManager.instance().validFuel(item));

@@ -1,0 +1,11 @@
+{
+	"parent": "minecraft:block/orientable",
+	"textures": {
+		"east": "#side",
+		"north": "#side2",
+		"west": "#side3",
+		"south": "#side4",
+		"up": "#front",
+		"down": "#back"
+	}
+}

@@ -25,12 +25,89 @@
 	"_comment31": "==== Machines ====",
 	"item.rp2_redux.project_table": "Project Table",
 	"block.rp2_redux.project_table": "Project Table",
+	"info.rp2_redux.project_table.0": "Multipurpose table for augmenting, recharging, and refilling.",
+	"info.rp2_redux.project_table.1": "Storages may be filled using their respective slots.",
+	"info.rp2_redux.project_table.2": "Tinker on!",
 
 	"item.rp2_redux.alloy_furnace": "Alloy Furnace",
 	"block.rp2_redux.alloy_furnace": "Alloy Furnace",
 	"info.rp2_redux.alloy_furnace.0": "Multipurpose table for augmenting, recharging, and refilling.",
 	"info.rp2_redux.alloy_furnace.1": "Storages may be filled using their respective slots.",
 	"info.rp2_redux.alloy_furnace.2": "Tinker on!",
+	
+	"item.rp2_redux.assembler": "Assembler",
+	"block.rp2_redux.assembler": "Assembler",
+	
+	"item.rp2_redux.block_breaker": "Block Breaker",
+	"block.rp2_redux.block_breaker": "Block Breaker",
+	
+	"item.rp2_redux.buffer": "Buffer",
+	"block.rp2_redux.buffer": "Buffer",
+	
+	"item.rp2_redux.deployer": "Deployer",
+	"block.rp2_redux.deployer": "Deployer",
+	
+	"item.rp2_redux.ejector": "Ejector",
+	"block.rp2_redux.ejector": "Ejector",
+	
+	"item.rp2_redux.filter": "Filter",
+	"block.rp2_redux.filter": "Filter",
+	
+	"item.rp2_redux.igniter": "Igniter",
+	"block.rp2_redux.igniter": "Igniter",
+	
+	"item.rp2_redux.item_detector": "Item Detector",
+	"block.rp2_redux.item_detector": "Item Detector",
+	
+	"item.rp2_redux.regulator": "Regulator",
+	"block.rp2_redux.regulator": "Regulator",
+	
+	"item.rp2_redux.relay": "Relay",
+	"block.rp2_redux.relay": "Relay",
+	
+	"item.rp2_redux.transposer": "Transposer",
+	"block.rp2_redux.transposer": "Transposer",
+	
+	"item.rp2_redux.battery_box": "Battery Box",
+	"block.rp2_redux.battery_box": "Battery Box",
+	
+	"item.rp2_redux.kinetic_generator": "Kinetic Generator",
+	"block.rp2_redux.kinetic_generator": "Kinetic Generator",
+	
+	"item.rp2_redux.solar_panel": "Solar Panel",
+	"block.rp2_redux.solar_panel": "Solar Panel",
+	
+	"item.rp2_redux.thermopile": "Thermopile",
+	"block.rp2_redux.thermopile": "Thermopile",
+	
+	"item.rp2_redux.blulectric_dynamo": "Blulectric Dynamo",
+	"block.rp2_redux.blulectric_dynamo": "Blulectric Dynamo",
+	
+	"item.rp2_redux.blulectric_alloy_furnace": "Blulectric Alloy Furnace",
+	"block.rp2_redux.blulectric_alloy_furnace": "Blulectric Alloy Furnace",
+	
+	"item.rp2_redux.blulectric_furnace": "Blulectric Furnace",
+	"block.rp2_redux.blulectric_furnace": "Blulectric Furnace",
+	
+	"item.rp2_redux.charging_bench": "Charging Bench",
+	"block.rp2_redux.charging_bench": "Charging Bench",
+	
+	"item.rp2_redux.frame_motor": "Frame Motor",
+	"block.rp2_redux.frame_motor": "Frame Motor",
+	
+	"item.rp2_redux.manager": "Manager",
+	"block.rp2_redux.manager": "Manager",
+	
+	"item.rp2_redux.pump": "Pump",
+	"block.rp2_redux.pump": "Pump",
+	
+	"item.rp2_redux.retriever": "Retriever",
+	"block.rp2_redux.retriever": "Retriever",
+	
+	"item.rp2_redux.sorting_machine": "Sorting Machine",
+	"block.rp2_redux.sorting_machine": "Sorting Machine",
+	
+
 
 	"_comment41": "==== Gems/Dusts ====",
 	"item.rp2_redux.green_sapphire": "Green Sapphire",
@@ -116,6 +193,18 @@
 	"item.rp2_redux.ruby_sword": "Ruby Sword",
 
 	"item.rp2_redux.screwdriver": "Screwdriver",
+	"item.rp2_redux.sonic_screwdriver": "Sonic Screwdriver",
+	"item.rp2_redux.athame": "Athame",
+	"item.rp2_redux.diamond_drawplate": "Diamond Drawplate",
+	"item.rp2_redux.voltmeter": "Voltmeter",
+	"item.rp2_redux.wool_card": "Wool Card",
+	"item.rp2_redux.paint_brush": "Paint Brush",
+	"item.rp2_redux.paint_can": "Paint Can",
+	"item.rp2_redux.paint_canvas": "Paint Canvas",
+	"item.rp2_redux.wooden_windmill": "Wooden Windmill",
+	"item.rp2_redux.wooden_wind_turbine": "Wooden Win Turbine",
+	"item.rp2_redux.canvas_bag": "Canvas Bag",
+	"item.rp2_redux.seed_bag": "Seed Bag",
 
 	"item.rp2_redux.wood_sickle": "Wood Sickle",
 	"item.rp2_redux.stone_sickle": "Stone Sickle",
@@ -126,10 +215,31 @@
 	"item.rp2_redux.diamond_handsaw": "Diamond Handsaw",
 
 	"_comment71": "==== Crafting Materials ====",
+	"item.rp2_redux.canvas": "Canvas",
+	"item.rp2_redux.wooden_sail": "Wooden Sail",
+	"item.rp2_redux.blank_plan": "Blank Plan",
+	"item.rp2_redux.written_plan": "Written Plan",
+
 	"item.rp2_redux.stone_wafer": "Stone Wafer",
 	"item.rp2_redux.stone_wire": "Stone Wire",
 	"item.rp2_redux.stone_anode": "Stone Anode",
 	"item.rp2_redux.stone_cathode": "Stone Cathode",
 	"item.rp2_redux.stone_pointer": "Stone Pointer",
-	"item.rp2_redux.canvas": "Canvas"
+	"item.rp2_redux.stone_bundle": "Stone Bundle",
+	"item.rp2_redux.stone_redwire": "Stone Redwire",
+	"item.rp2_redux.plate_assembly": "Plate Assembly",
+
+	"item.rp2_redux.silicon_boule": "Silicon Boule",
+	"item.rp2_redux.silicon_wafer": "Silicon Wafer",
+	"item.rp2_redux.red_doped_wafer": "Red-Doped Silicon",
+	"item.rp2_redux.blue_doped_wafer": "Blue-Doped Silicon",
+	"item.rp2_redux.silicon_chip": "Silicon Chip",
+	"item.rp2_redux.tainted_silicon_chip": "Tainted Silicon Chip",
+
+	"item.rp2_redux.bt_battery": "BT Battery",
+	"item.rp2_redux.blulectric_motor": "Blulectric Motor",
+	"item.rp2_redux.copper_coil": "Copper Coil",
+	"item.rp2_redux.fine_copper_wire": "Fine Copper Wire",
+	"item.rp2_redux.fine_iron_wire": "Fine Iron Wire",
+	"item.rp2_redux.lumar": "Lumar"
 }

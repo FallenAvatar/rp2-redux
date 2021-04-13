@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import cofh.core.item.ItemCoFH;
+import cofh.core.item.SickleItem;
 import cofh.lib.util.helpers.MathHelper;
 
 import static fallenavatar.rp2_redux.core.common.RP2ItemGroups.*;
@@ -164,7 +165,7 @@ public class RegistrationHelper {
 		if( handsaw )
 			ITEMS.register(prefix + "_handsaw", () -> new ShovelItem(tier, 3, -2.4F, new Item.Properties().group(toolGroup)));
 
-		ITEMS.register(prefix + "_sickle", () -> new ShovelItem(tier, 1.5F, -3.0F, new Item.Properties().group(toolGroup)));
+		ITEMS.register(prefix + "_sickle", () -> new SickleItem(tier, 1.5F, -3.0F, new Item.Properties().group(toolGroup)));
     }
 
     /* public static void registerExtraToolSet(String prefix, IItemTier tier, ItemGroup toolGroup) {

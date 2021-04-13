@@ -1,9 +1,5 @@
 # ToDo
 
-## List
-1. List all objects here
-2. Start adding to Mod
-
 ## Worldgen
 - Indigo Flowers
 - Flax
@@ -13,25 +9,49 @@
 
 ## Items
 - Fine Wire
-  - Copper
-  - Iron
   - Silver?
-- Plan
 - Indigo Dye? (maybe not needed anymore)
-
-## Blocks
-- Marble
-  - Brick
-- Basalt
-  - Cobblestone
-  - Brick
-  - Chiseled Brick
-  - Paver
+- Other "Items" below (and plates, gears, etc from Ores)
 
 ## Machines / TileEntities
-- Wires
-- Gates
-- Tubes
+
+### Wires
+- Red Alloy
+- Blulectric Power
+- Colored
+- Bundled
+### Gates
+
+### Machines
+- Assembler
+- Block Breaker
+- Buffer
+- Deployer
+- Ejector
+- Filter
+- Igniter
+- Item Detector
+- Regulator
+- Relay
+- Transposer
+- Battery Box
+- Kinetic Gen
+- Solar Panel
+- Thermopile
+- Blulectric Dynamo
+- Blulectric Alloy Furnace
+- Blulectric Furnace
+- Charging Bench
+- Frame Motor
+- Manager
+- Pump
+- Retriever
+- Sorting Machine
+- 
+### Tubes
+  - Items
+  - Fluids
+  - Redstone
 - Frames
 - Lumar / Lighting
 
@@ -40,43 +60,30 @@
   - Regular Screwdriver
   - Sonic Screwdriver
 - Sickle
-  - Wood, Stone, Iron, Gold, Diamond, Ruby, Green Sapphire, Sapphire
-- Pick
-  - Ruby, Green Sapphire, Sapphire
-- Shovel
-  - Ruby, Green Sapphire, Sapphire
-- Axe
-  - Ruby, Green Sapphire, Sapphire
-- Sword
-  - Ruby, Green Sapphire, Sapphire
+  - Replace CoFH's Sickle with our own, +1 range on ground, "sphere" on trees, also activates on grass (on the block above)
 - Handsaw
-  - Iron, Diamond, Ruby, Green Sapphire, Sapphire
+  - Handle durability loss on craft
 - Paint Brushes and Cans
 - Drawplate
-  - Diamond
-  - More?
+  - More than diamond?
 - Voltmeter
 - Wool Card
 - Athame
 
-## Ores
-Ores, Dusts, Ingots, Nuggets, Plates, Gears, Storage Blocks
+## Resources
+### Metals
+Dusts, Plates, Gears
 - Silver
 - Copper
 - Tin
+- Tungsten? (Ingot, dust, block as well?)
+
+### Gems
+Dust, Plates? Gears?
 - Ruby
 - Green Sapphire
 - Sapphire
+  
+### Dusts
+Storage Blocks
 - Nikolite
-- Tungsten
-
-## Alloys
-- Red Alloy
-- Blue Alloy
-- Brass
-- Silicon
-  - Boule
-  - Wafer
-    - Regular
-    - Red-Doped
-    - Blue-Doped

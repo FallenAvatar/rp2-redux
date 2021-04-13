@@ -4,7 +4,9 @@ import static fallenavatar.rp2_redux.lib.util.Constants.*;
 import static fallenavatar.rp2_redux.core.common.RP2IDs.*;
 
 import fallenavatar.rp2_redux.core.inventory.container.AlloyFurnaceContainer;
+import fallenavatar.rp2_redux.core.inventory.container.ProjectTableContainer;
 import fallenavatar.rp2_redux.core.tile.AlloyFurnaceTile;
+import fallenavatar.rp2_redux.core.tile.ProjectTableTile;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.tileentity.TileEntityType;
@@ -23,4 +25,8 @@ public class RP2References {
 
 	@ObjectHolder(ID_PROJECT_TABLE)
     public static final Block PROJECT_TABLE = null;
+	@ObjectHolder(ID_PROJECT_TABLE)
+    public static final TileEntityType<ProjectTableTile> PROJECT_TABLE_TILE = null;
+	@ObjectHolder(ID_PROJECT_TABLE)
+    public static final ContainerType<ProjectTableContainer> PROJECT_TABLE_CONTAINER = null;
 }

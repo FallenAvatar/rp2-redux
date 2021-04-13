@@ -1,0 +1,33 @@
+{
+	"variants": {
+		"facing=up,twist=north": { "model": "rp2_redux:block/assembler", "x": 0, "y": 0 },
+		"facing=up,twist=east": { "model": "rp2_redux:block/assembler", "x": 0, "y": 90 },
+		"facing=up,twist=south": { "model": "rp2_redux:block/assembler", "x": 0, "y": 180 },
+		"facing=up,twist=west": { "model": "rp2_redux:block/assembler", "x": 0, "y": 270 },
+
+		"facing=north,twist=north": { "model": "rp2_redux:block/assembler", "x": 90, "y": 0 },
+		"facing=north,twist=east": { "model": "rp2_redux:block/assembler-alt", "x": 90, "y": 0 },
+		"facing=north,twist=south": { "model": "rp2_redux:block/assembler", "x": 270, "y": 180 },
+		"facing=north,twist=west": { "model": "rp2_redux:block/assembler-alt", "x": 270, "y": 180 },
+
+		"facing=east,twist=north": { "model": "rp2_redux:block/assembler-alt", "x": 90, "y": 90 },
+		"facing=east,twist=east": { "model": "rp2_redux:block/assembler", "x": 90, "y": 90 },
+		"facing=east,twist=south": { "model": "rp2_redux:block/assembler-alt", "x": 270, "y": 270 },
+		"facing=east,twist=west": { "model": "rp2_redux:block/assembler", "x": 270, "y": 270 },
+
+		"facing=south,twist=north": { "model": "rp2_redux:block/assembler", "x": 270, "y": 0 },
+		"facing=south,twist=east": { "model": "rp2_redux:block/assembler-alt", "x": 270, "y": 0 },
+		"facing=south,twist=south": { "model": "rp2_redux:block/assembler", "x": 90, "y": 180 },
+		"facing=south,twist=west": { "model": "rp2_redux:block/assembler-alt", "x": 90, "y": 180 },
+
+		"facing=west,twist=north": { "model": "rp2_redux:block/assembler", "x": 90, "y": 270 },
+		"facing=west,twist=east": { "model": "rp2_redux:block/assembler-alt", "x": 90, "y": 270 },
+		"facing=west,twist=south": { "model": "rp2_redux:block/assembler", "x": 270, "y": 90 },
+		"facing=west,twist=west": { "model": "rp2_redux:block/assembler-alt", "x": 270, "y": 90 },
+		
+		"facing=down,twist=north": { "model": "rp2_redux:block/assembler", "x": 180, "y": 0 },
+		"facing=down,twist=east": { "model": "rp2_redux:block/assembler", "x": 180, "y": 90 },
+		"facing=down,twist=south": { "model": "rp2_redux:block/assembler", "x": 180, "y": 180 },
+		"facing=down,twist=west": { "model": "rp2_redux:block/assembler", "x": 180, "y": 270 }
+	}
+}

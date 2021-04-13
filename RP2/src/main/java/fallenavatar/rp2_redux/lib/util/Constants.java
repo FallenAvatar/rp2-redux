@@ -31,6 +31,7 @@ public class Constants {
 	// region BLOCKSTATE PROPERTIES
     public static final DirectionProperty FACING_ALL = DirectionProperty.create("facing", Direction.NORTH, Direction.EAST, Direction.SOUTH, Direction.WEST, Direction.UP, Direction.DOWN);
     public static final DirectionProperty FACING_HORIZONTAL = DirectionProperty.create("facing", Plane.HORIZONTAL);
+	public static final DirectionProperty TWIST = DirectionProperty.create("twist", Plane.HORIZONTAL);
     // endregion
 
 	// region GLOBALS

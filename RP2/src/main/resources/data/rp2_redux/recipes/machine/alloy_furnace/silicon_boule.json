@@ -1,0 +1,27 @@
+{
+  "type": "rp2_redux:alloy_furnace",
+  "input": [
+    {
+      "value": [
+        {
+          "tag": "forge:sand"
+        }
+      ],
+      "count": 8
+    },
+    {
+      "value": [
+        {
+          "tag": "minecraft:coals"
+        }
+      ],
+      "count": 8
+    }
+  ],
+  "result": [
+    {
+      "item": "rp2_redux:silicon_boule",
+      "count": 1
+    }
+  ]
+}

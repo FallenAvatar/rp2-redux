@@ -1,0 +1,7 @@
+{
+	"parent": "rp2_redux:block/assembler",
+	"textures": {
+		"front": "rp2_redux:block/machines/assembler-front-on",
+		"back": "rp2_redux:block/machines/assembler-back-on"
+	}
+}

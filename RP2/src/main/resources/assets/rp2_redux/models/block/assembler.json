@@ -1,0 +1,9 @@
+{
+	"parent": "rp2_redux:block/12way",
+	"textures": {
+		"side": "rp2_redux:block/machines/assembler-side",
+		"side2": "rp2_redux:block/machines/assembler-side2",
+		"front": "rp2_redux:block/machines/assembler-front",
+		"back": "rp2_redux:block/machines/assembler-back"
+	}
+}

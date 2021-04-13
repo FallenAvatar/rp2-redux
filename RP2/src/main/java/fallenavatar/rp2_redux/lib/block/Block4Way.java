@@ -30,7 +30,7 @@ public class Block4Way extends Block {
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext context) {
-		return super.getStateForPlacement(context).with(FACING_HORIZONTAL, context.getPlayer() != null ? context.getPlayer().getAdjustedHorizontalFacing().getOpposite() : Direction.NORTH);
+		return this.getDefaultState().with(FACING_HORIZONTAL, context.getPlayer() != null ? context.getPlayer().getAdjustedHorizontalFacing().getOpposite() : Direction.NORTH);
     }
 
     @Override

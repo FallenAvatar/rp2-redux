@@ -1,0 +1,8 @@
+{
+	"parent": "rp2_redux:block/assembler",
+	"display": {
+		"": {
+			"rotation": [0,90,0]
+		}
+	}
+}

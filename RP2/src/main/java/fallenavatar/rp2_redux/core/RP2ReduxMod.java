@@ -23,7 +23,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import fallenavatar.rp2_redux.core.client.gui.AlloyFurnaceScreen;
 import fallenavatar.rp2_redux.core.init.RP2Blocks;
 import fallenavatar.rp2_redux.core.init.RP2Containers;
 import fallenavatar.rp2_redux.core.init.RP2Items;
@@ -33,13 +32,11 @@ import fallenavatar.rp2_redux.core.init.RP2RecipeTypes;
 import cofh.core.util.Proxy;
 import cofh.core.util.ProxyClient;
 import cofh.lib.util.DeferredRegisterCoFH;
-import fallenavatar.rp2_redux.core.world.biome.RP2BiomeFeatures;
 import fallenavatar.rp2_redux.core.world.gen.feature.RP2Features;
 
 import java.util.stream.Collectors;
 
 import static fallenavatar.rp2_redux.lib.util.Constants.*;
-import static fallenavatar.rp2_redux.core.init.RP2References.ALLOY_FURNACE_CONTAINER;
 
 @Mod(ID_RP2_REDUX)
 public class RP2ReduxMod {
@@ -90,7 +87,7 @@ public class RP2ReduxMod {
 		public static void onClientSetup(final FMLClientSetupEvent event) {
 			LOG.info("HELLO from onClientSetup");
 
-			ScreenManager.registerFactory(ALLOY_FURNACE_CONTAINER, AlloyFurnaceScreen::new);
+			RP2Containers.registerScreens();
 		}
 		
 		@SubscribeEvent
