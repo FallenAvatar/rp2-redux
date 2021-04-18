@@ -30,7 +30,7 @@ public class RP2IDs {
 	public static final String ID_NIKOLITE = "nikolite";
 	// endregion
 
-	// region Crafting Materials
+	// region CRAFTING
 	public static final String ID_CANVAS = "canvas";
 	public static final String ID_WOODEN_SAIL = "wooden_sail";
 	public static final String ID_BLANK_PLAN = "blank_plan";
@@ -116,6 +116,10 @@ public class RP2IDs {
 	public static final String ID_PUMP = "pump";
 	public static final String ID_RETRIEVER = "retriever";
 	public static final String ID_SORTING_MACHINE = "sorting_machine";
+	// endregion
+
+	// region GATES
+	public static final String ID_GATE_AND = "gate_and";
 	// endregion
 
 	// region LIGHTS

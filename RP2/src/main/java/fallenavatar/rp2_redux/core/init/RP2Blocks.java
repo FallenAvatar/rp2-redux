@@ -51,8 +51,6 @@ public class RP2Blocks {
 
 		RegistrationHelper.registerBlock(ID_TUNGSTEN+"_ore", () -> new Block(from(Blocks.DIAMOND_ORE)) );
 
-		RegistrationHelper.registerBlock(ID_PROJECT_TABLE, () -> new ProjectTable(from(Blocks.CRAFTING_TABLE)), RP2_MACHINES );
-		RegistrationHelper.registerBlock(ID_ALLOY_FURNACE, () -> new AlloyFurnace(from(Blocks.FURNACE)), RP2_MACHINES );
 		RegistrationHelper.registerBlock(ID_ASSEMBLER, () -> new Block24Way(from(Blocks.DROPPER)), RP2_MACHINES );
 		RegistrationHelper.registerBlock(ID_BLOCK_BREAKER, () -> new Block6Way(from(Blocks.DROPPER)), RP2_MACHINES );
 		RegistrationHelper.registerBlock(ID_BUFFER, () -> new Block6Way(from(Blocks.DROPPER)), RP2_MACHINES );
@@ -81,7 +79,16 @@ public class RP2Blocks {
 		RegistrationHelper.registerBlock(ID_RETRIEVER, () -> new Block6Way(from(Blocks.DROPPER)), RP2_MACHINES );
 		RegistrationHelper.registerBlock(ID_SORTING_MACHINE, () -> new Block6Way(from(Blocks.DROPPER)), RP2_MACHINES );
 
-		TILE_ENTITIES.register(ID_ALLOY_FURNACE, () -> TileEntityType.Builder.create(AlloyFurnaceTile::new, ALLOY_FURNACE).build(null));
+
+
+		RegistrationHelper.registerBlock(ID_PROJECT_TABLE, () -> new ProjectTable(from(Blocks.CRAFTING_TABLE)), RP2_MACHINES );
 		TILE_ENTITIES.register(ID_PROJECT_TABLE, () -> TileEntityType.Builder.create(ProjectTableTile::new, PROJECT_TABLE).build(null));
+
+		RegistrationHelper.registerBlock(ID_ALLOY_FURNACE, () -> new AlloyFurnace(from(Blocks.FURNACE)), RP2_MACHINES );
+		TILE_ENTITIES.register(ID_ALLOY_FURNACE, () -> TileEntityType.Builder.create(AlloyFurnaceTile::new, ALLOY_FURNACE).build(null));
+
+
+
+		RegistrationHelper.registerBlock(ID_GATE_AND, () -> new Block24Way(from(Blocks.FURNACE)), RP2_MACHINES );
 	}
 }

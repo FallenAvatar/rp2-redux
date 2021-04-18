@@ -1,0 +1,8 @@
+{
+	"parent": "rp2_redux:block/base",
+	"textures": {
+		"side": "rp2_redux:block/machines/solar_panel-side",
+		"front": "rp2_redux:block/machines/solar_panel-front",
+		"back": "rp2_redux:block/machines/solar_panel-back"
+	}
+}

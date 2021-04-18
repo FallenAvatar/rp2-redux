@@ -1,5 +1,5 @@
 {
-	"parent": "minecraft:block/orientable",
+	"parent": "rp2_redux:block/base_orientable",
 	"textures": {
 		"east": "#side",
 		"north": "#side2",

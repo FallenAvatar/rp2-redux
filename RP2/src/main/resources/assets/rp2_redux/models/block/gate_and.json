@@ -1,0 +1,8 @@
+{
+	"parent": "rp2_redux:block/12way",
+	"textures": {
+		"side": "rp2_redux:block/machines/gate_side-15",
+		"front": "rp2_redux:block/machines/gate_and-front",
+		"back": "rp2_redux:block/machines/gate-back"
+	}
+}

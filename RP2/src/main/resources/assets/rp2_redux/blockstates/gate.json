@@ -1,0 +1,20 @@
+{
+	"multipart": [
+		{ "apply": { "model": "block/gate_base" } },
+		{ "apply": { "model": "block/gate_torch-back" } },
+
+		{
+			"when": { "north": "true" },
+			"apply": { "y": 0 }
+		}, {
+			"when": { "east": "true" },
+			"apply": { "y": 90 }
+		}, {
+			"when": { "south": "true" },
+			"apply": { "y": 180 }
+		}, {
+			"when": { "west": "true" },
+			"apply": { "y": 270 }
+		}
+	]
+}

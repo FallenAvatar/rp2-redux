@@ -1,0 +1,8 @@
+{
+	"parent": "rp2_redux:block/24way",
+	"textures": {
+		"side2": "#side",
+		"side3": "#side",
+		"side4": "#side"
+	}
+}

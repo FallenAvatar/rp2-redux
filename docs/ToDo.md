@@ -21,6 +21,27 @@
 - Colored
 - Bundled
 ### Gates
+- AND
+- Buffer
+- Counter
+- Invert Cell
+- Multiplexer
+- NAND
+- Non-invert Cell
+- NOR
+- NOT
+- Null Cell
+- OR
+- Pulse Former
+- Randomizer
+- Repeater
+- RS Latch
+- Sequencer
+- Synchronizer
+- Timer
+- Toggle Latch
+- XNOR
+- XOR
 
 ### Machines
 - Assembler
