@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "build-all",
+			"script": "build",
+			"description": "",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"project": "rp2-redux",
+			"buildFile": "D:\\Home\\Amy\\Projects\\Personal\\Games\\mc-mods\\rp2-redux\\RP2\\build.gradle",
+			"rootProject": "rp2-redux",
+			"projectFolder": "d:\\Home\\Amy\\Projects\\Personal\\Games\\mc-mods\\rp2-redux\\RP2",
+			"workspaceFolder": "d:\\Home\\Amy\\Projects\\Personal\\Games\\mc-mods\\rp2-redux",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: build"
+		}
+	]
+}

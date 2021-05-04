@@ -14,11 +14,12 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLModIdMappingEvent;
 
-@Mod.EventBusSubscriber(modid = ID_RP2_REDUX)
-public class RP2CommonSetupEvents {
-	private RP2CommonSetupEvents() {}
+@Mod.EventBusSubscriber(modid = ID_RP2_REDUX, bus = Bus.FORGE)
+public class ForgeEventBusSubscriber {
+	private ForgeEventBusSubscriber() {}
 
 	@SubscribeEvent
     public static void addReloadListener(final AddReloadListenerEvent event) {

@@ -2,113 +2,75 @@
 	"_comment01": "========================================================================================================",
 	"_comment02": "RP2 Redux",
 	"_comment03": "========================================================================================================",
-
 	"info.rp2_redux.test": "This is just a test.",
-
 	"_comment11": "==== Creative Tabs ====",
 	"itemGroup.rp2_redux.blocks": "RP2 Blocks",
 	"itemGroup.rp2_redux.items": "RP2 Items",
 	"itemGroup.rp2_redux.machines": "RP2 Machines",
 	"itemGroup.rp2_redux.tools": "RP2 Tools",
 	"itemGroup.rp2_redux.combat": "RP2 Combat",
-
 	"_comment21": "==== Basic Blocks ====",
 	"block.rp2_redux.marble": "Marble",
 	"block.rp2_redux.marble_bricks": "Marble Brick",
-
-	"block.rp2_redux.basalt": "Basalt",
-	"block.rp2_redux.basalt_bricks": "Basalt Brick",
-	"block.rp2_redux.basalt_smooth": "Basalt Paver",
-	"block.rp2_redux.basalt_cobblestone": "Basalt Cobblestone",
-	"block.rp2_redux.basalt_chiseled": "Chiseled Basalt Brick",
-
 	"_comment31": "==== Machines ====",
 	"item.rp2_redux.project_table": "Project Table",
 	"block.rp2_redux.project_table": "Project Table",
 	"info.rp2_redux.project_table.0": "Multipurpose table for augmenting, recharging, and refilling.",
 	"info.rp2_redux.project_table.1": "Storages may be filled using their respective slots.",
 	"info.rp2_redux.project_table.2": "Tinker on!",
-
 	"item.rp2_redux.alloy_furnace": "Alloy Furnace",
 	"block.rp2_redux.alloy_furnace": "Alloy Furnace",
 	"info.rp2_redux.alloy_furnace.0": "Multipurpose table for augmenting, recharging, and refilling.",
 	"info.rp2_redux.alloy_furnace.1": "Storages may be filled using their respective slots.",
 	"info.rp2_redux.alloy_furnace.2": "Tinker on!",
-	
 	"item.rp2_redux.assembler": "Assembler",
 	"block.rp2_redux.assembler": "Assembler",
-	
 	"item.rp2_redux.block_breaker": "Block Breaker",
 	"block.rp2_redux.block_breaker": "Block Breaker",
-	
 	"item.rp2_redux.buffer": "Buffer",
 	"block.rp2_redux.buffer": "Buffer",
-	
 	"item.rp2_redux.deployer": "Deployer",
 	"block.rp2_redux.deployer": "Deployer",
-	
 	"item.rp2_redux.ejector": "Ejector",
 	"block.rp2_redux.ejector": "Ejector",
-	
 	"item.rp2_redux.filter": "Filter",
 	"block.rp2_redux.filter": "Filter",
-	
 	"item.rp2_redux.igniter": "Igniter",
 	"block.rp2_redux.igniter": "Igniter",
-	
 	"item.rp2_redux.item_detector": "Item Detector",
 	"block.rp2_redux.item_detector": "Item Detector",
-	
 	"item.rp2_redux.regulator": "Regulator",
 	"block.rp2_redux.regulator": "Regulator",
-	
 	"item.rp2_redux.relay": "Relay",
 	"block.rp2_redux.relay": "Relay",
-	
 	"item.rp2_redux.transposer": "Transposer",
 	"block.rp2_redux.transposer": "Transposer",
-	
 	"item.rp2_redux.battery_box": "Battery Box",
 	"block.rp2_redux.battery_box": "Battery Box",
-	
 	"item.rp2_redux.kinetic_generator": "Kinetic Generator",
 	"block.rp2_redux.kinetic_generator": "Kinetic Generator",
-	
 	"item.rp2_redux.solar_panel": "Solar Panel",
 	"block.rp2_redux.solar_panel": "Solar Panel",
-	
 	"item.rp2_redux.thermopile": "Thermopile",
 	"block.rp2_redux.thermopile": "Thermopile",
-	
 	"item.rp2_redux.blulectric_dynamo": "Blulectric Dynamo",
 	"block.rp2_redux.blulectric_dynamo": "Blulectric Dynamo",
-	
 	"item.rp2_redux.blulectric_alloy_furnace": "Blulectric Alloy Furnace",
 	"block.rp2_redux.blulectric_alloy_furnace": "Blulectric Alloy Furnace",
-	
 	"item.rp2_redux.blulectric_furnace": "Blulectric Furnace",
 	"block.rp2_redux.blulectric_furnace": "Blulectric Furnace",
-	
 	"item.rp2_redux.charging_bench": "Charging Bench",
 	"block.rp2_redux.charging_bench": "Charging Bench",
-	
 	"item.rp2_redux.frame_motor": "Frame Motor",
 	"block.rp2_redux.frame_motor": "Frame Motor",
-	
 	"item.rp2_redux.manager": "Manager",
 	"block.rp2_redux.manager": "Manager",
-	
 	"item.rp2_redux.pump": "Pump",
 	"block.rp2_redux.pump": "Pump",
-	
 	"item.rp2_redux.retriever": "Retriever",
 	"block.rp2_redux.retriever": "Retriever",
-	
 	"item.rp2_redux.sorting_machine": "Sorting Machine",
 	"block.rp2_redux.sorting_machine": "Sorting Machine",
-	
-
-
 	"_comment41": "==== Gems/Dusts ====",
 	"item.rp2_redux.green_sapphire": "Green Sapphire",
 	"item.rp2_redux.green_sapphire_block": "Green Sapphire Block",
@@ -117,7 +79,6 @@
 	"item.rp2_redux.green_sapphire_gear": "Green Sapphire Gear",
 	"item.rp2_redux.green_sapphire_ore": "Green Sapphire Ore",
 	"block.rp2_redux.green_sapphire_ore": "Green Sapphire Ore",
-
 	"item.rp2_redux.sapphire": "Sapphire",
 	"item.rp2_redux.sapphire_block": "Sapphire Block",
 	"block.rp2_redux.sapphire_block": "Sapphire Block",
@@ -125,7 +86,6 @@
 	"item.rp2_redux.sapphire_gear": "Sapphire Gear",
 	"item.rp2_redux.sapphire_ore": "Sapphire Ore",
 	"block.rp2_redux.sapphire_ore": "Sapphire Ore",
-
 	"item.rp2_redux.ruby": "Ruby",
 	"item.rp2_redux.ruby_block": "Ruby Block",
 	"block.rp2_redux.ruby_block": "Ruby Block",
@@ -133,11 +93,9 @@
 	"item.rp2_redux.ruby_gear": "Ruby Gear",
 	"item.rp2_redux.ruby_ore": "Ruby Ore",
 	"block.rp2_redux.ruby_ore": "Ruby Ore",
-
 	"item.rp2_redux.nikolite_dust": "Nikolite Dust",
 	"item.rp2_redux.nikolite_ore": "Nikolite Ore",
 	"block.rp2_redux.nikolite_ore": "Nikolite Ore",
-
 	"_comment51": "==== Metals ====",
 	"item.rp2_redux.copper_ingot": "Copper Ingot",
 	"item.rp2_redux.copper_nugget": "Copper Nugget",
@@ -145,28 +103,23 @@
 	"block.rp2_redux.copper_block": "Copper Block",
 	"item.rp2_redux.copper_ore": "Copper Ore",
 	"block.rp2_redux.copper_ore": "Copper Ore",
-
 	"item.rp2_redux.tin_ingot": "Tin Ingot",
 	"item.rp2_redux.tin_nugget": "Tin Nugget",
 	"item.rp2_redux.tin_block": "Tin Block",
 	"block.rp2_redux.tin_block": "Tin Block",
 	"item.rp2_redux.tin_ore": "Tin Ore",
 	"block.rp2_redux.tin_ore": "Tin Ore",
-
 	"item.rp2_redux.silver_ingot": "Silver Ingot",
 	"item.rp2_redux.silver_nugget": "Silver Nugget",
 	"item.rp2_redux.silver_block": "Silver Block",
 	"block.rp2_redux.silver_block": "Silver Block",
 	"item.rp2_redux.silver_ore": "Silver Ore",
 	"block.rp2_redux.silver_ore": "Silver Ore",
-
 	"item.rp2_redux.brass_ingot": "Brass Ingot",
 	"item.rp2_redux.red_alloy_ingot": "Red Alloy Ingot",
 	"item.rp2_redux.blue_alloy_ingot": "Blue Alloy Ingot",
-
 	"item.rp2_redux.tungsten_ore": "Tungsten Ore",
 	"block.rp2_redux.tungsten_ore": "Tungsten Ore",
-
 	"_comment61": "==== Tools ====",
 	"item.rp2_redux.green_sapphire_axe": "Green Sapphire Axe",
 	"item.rp2_redux.green_sapphire_handsaw": "Green Sapphire Handsaw",
@@ -175,7 +128,6 @@
 	"item.rp2_redux.green_sapphire_shovel": "Green Sapphire Shovel",
 	"item.rp2_redux.green_sapphire_sickle": "Green Sapphire Sickle",
 	"item.rp2_redux.green_sapphire_sword": "Green Sapphire Sword",
-	
 	"item.rp2_redux.sapphire_axe": "Sapphire Axe",
 	"item.rp2_redux.sapphire_handsaw": "Sapphire Handsaw",
 	"item.rp2_redux.sapphire_hoe": "Sapphire Hoe",
@@ -183,7 +135,6 @@
 	"item.rp2_redux.sapphire_shovel": "Sapphire Shovel",
 	"item.rp2_redux.sapphire_sickle": "Sapphire Sickle",
 	"item.rp2_redux.sapphire_sword": "Sapphire Sword",
-	
 	"item.rp2_redux.ruby_axe": "Ruby Axe",
 	"item.rp2_redux.ruby_handsaw": "Ruby Handsaw",
 	"item.rp2_redux.ruby_hoe": "Ruby Hoe",
@@ -191,7 +142,6 @@
 	"item.rp2_redux.ruby_shovel": "Ruby Shovel",
 	"item.rp2_redux.ruby_sickle": "Ruby Sickle",
 	"item.rp2_redux.ruby_sword": "Ruby Sword",
-
 	"item.rp2_redux.screwdriver": "Screwdriver",
 	"item.rp2_redux.sonic_screwdriver": "Sonic Screwdriver",
 	"item.rp2_redux.athame": "Athame",
@@ -205,7 +155,6 @@
 	"item.rp2_redux.wooden_wind_turbine": "Wooden Win Turbine",
 	"item.rp2_redux.canvas_bag": "Canvas Bag",
 	"item.rp2_redux.seed_bag": "Seed Bag",
-
 	"item.rp2_redux.wood_sickle": "Wood Sickle",
 	"item.rp2_redux.stone_sickle": "Stone Sickle",
 	"item.rp2_redux.iron_sickle": "Iron Sickle",
@@ -213,13 +162,11 @@
 	"item.rp2_redux.gold_sickle": "Gold Sickle",
 	"item.rp2_redux.diamond_sickle": "Diamond Sickle",
 	"item.rp2_redux.diamond_handsaw": "Diamond Handsaw",
-
 	"_comment71": "==== Crafting Materials ====",
 	"item.rp2_redux.canvas": "Canvas",
 	"item.rp2_redux.wooden_sail": "Wooden Sail",
 	"item.rp2_redux.blank_plan": "Blank Plan",
 	"item.rp2_redux.written_plan": "Written Plan",
-
 	"item.rp2_redux.stone_wafer": "Stone Wafer",
 	"item.rp2_redux.stone_wire": "Stone Wire",
 	"item.rp2_redux.stone_anode": "Stone Anode",
@@ -228,14 +175,12 @@
 	"item.rp2_redux.stone_bundle": "Stone Bundle",
 	"item.rp2_redux.stone_redwire": "Stone Redwire",
 	"item.rp2_redux.plate_assembly": "Plate Assembly",
-
 	"item.rp2_redux.silicon_boule": "Silicon Boule",
 	"item.rp2_redux.silicon_wafer": "Silicon Wafer",
 	"item.rp2_redux.red_doped_wafer": "Red-Doped Silicon",
 	"item.rp2_redux.blue_doped_wafer": "Blue-Doped Silicon",
 	"item.rp2_redux.silicon_chip": "Silicon Chip",
 	"item.rp2_redux.tainted_silicon_chip": "Tainted Silicon Chip",
-
 	"item.rp2_redux.bt_battery": "BT Battery",
 	"item.rp2_redux.blulectric_motor": "Blulectric Motor",
 	"item.rp2_redux.copper_coil": "Copper Coil",

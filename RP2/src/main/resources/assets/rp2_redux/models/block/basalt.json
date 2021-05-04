@@ -1,7 +1,0 @@
-{
-	"parent": "minecraft:block/cube_all",
-	"textures": {
-		"all": "rp2_redux:block/world/basalt",
-		"particle": "rp2_redux:block/world/basalt"
-	}
-}

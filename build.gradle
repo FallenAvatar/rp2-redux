@@ -26,6 +26,6 @@ gradle.projectsEvaluated{
         projects.each {
             spec.from(project(it).tasks.jar.getOutputs().getFiles())
         }
-        spec.into file("Workspace/build/libs")
+        spec.into file("RP2/build/libs")
     }
 }

@@ -26,17 +26,67 @@ minecraft {
 	evaluationDependsOn(':ThermalCore')
 
     runs {
+		client {
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            // property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            // property 'forge.logging.console.level', 'debug'
+
+            property 'mixin.env.disableRefMap', 'true'
+
+            mods {
+                CoFHCore {
+                    source project(':CoFHCore').sourceSets.main
+                }
+				ThermalCore {
+                    source project(':ThermalCore').sourceSets.main
+                }
+                RP2 {
+                    source project(':RP2').sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            // property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            // property 'forge.logging.console.level', 'debug'
+
+            property 'mixin.env.disableRefMap', 'true'
+
+            mods {
+                CoFHCore {
+                    source project(':CoFHCore').sourceSets.main
+                }
+				ThermalCore {
+                    source project(':ThermalCore').sourceSets.main
+                }
+                RP2 {
+                    source project(':RP2').sourceSets.main
+                }
+            }
+        }
+
         data {
             workingDirectory project.file('run')
 
-            properties 'forge.logging.markers': 'REGISTRIES'
+            properties 'forge.logging.markers': 'SCAN,REGISTRIES,REGISTRYDUMP'
             properties 'forge.logging.console.level': 'debug'
 			//properties 'mixin.env.disableRefMap': 'true'
 			//property 'mixin.env.refMapRemappingFile', "${projectDir}\\build\\createSrgToMcp\\output.srg"
+			property 'mixin.env.disableRefMap', 'true'
 
-            args '--all', '--output', file('src/generated/'),
+            args '--all', 
                     '--mod', archivesBaseName,
-                    '--existing', sourceSets.main.resources.srcDirs[0]
+					'--output', file('src/generated/resources'),
+                    '--existing', file('src/main/resources')
 
             mods {
                 CoFHCore {
@@ -73,17 +123,8 @@ dependencies {
 	compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
     runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
 
-	if (findProject(':CoFHCore') != null) {
-        compile project(':CoFHCore')
-    } else {
-        // TODO: Maven!
-    }
-
-	if (findProject(':ThermalCore') != null) {
-        compile project(':ThermalCore')
-    } else {
-        // TODO: Maven!
-    }
+    compile project(':CoFHCore')
+    compile project(':ThermalCore')
 }
 
 jar {

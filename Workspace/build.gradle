@@ -10,6 +10,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
 
 repositories {
     maven { // TOP
@@ -129,7 +130,7 @@ def reobfArtifact = artifacts.add('default', reobfFile) {
     type 'jar'
     builtBy 'reobfJar'
 }
-/* publishing {
+publishing {
     publications {
         mavenJava(MavenPublication) {
             artifact reobfArtifact
@@ -141,4 +142,3 @@ def reobfArtifact = artifacts.add('default', reobfFile) {
         }
     }
 }
- */
