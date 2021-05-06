@@ -8,7 +8,7 @@ import fallenavatar.rp2_redux.core.tile.ProjectTableTile;
 import fallenavatar.rp2_redux.lib.block.Block24Way;
 import fallenavatar.rp2_redux.lib.block.Block4Way;
 import fallenavatar.rp2_redux.lib.block.Block6Way;
-import fallenavatar.rp2_redux.lib.data.def.BlockDef;
+import fallenavatar.rp2_redux.lib.data.def.BaseBlockDef;
 import fallenavatar.rp2_redux.core.util.helpers.RegistrationHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -21,7 +21,7 @@ import static fallenavatar.rp2_redux.core.RP2ReduxMod.TILE_ENTITIES;
 import static fallenavatar.rp2_redux.core.init.RP2References.*;
 
 public class RP2Blocks {
-	public static final BlockDef Basalt = new Basalt();
+	public static final BaseBlockDef Basalt = new Basalt();
 
 	private RP2Blocks() {}
 

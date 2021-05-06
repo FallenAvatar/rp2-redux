@@ -29,4 +29,7 @@ public class RP2References {
     public static final TileEntityType<ProjectTableTile> PROJECT_TABLE_TILE = null;
 	@ObjectHolder(ID_PROJECT_TABLE)
     public static final ContainerType<ProjectTableContainer> PROJECT_TABLE_CONTAINER = null;
+
+	@ObjectHolder(ID_BASALT)
+    public static final Block BASALT = null;
 }

@@ -14,3 +14,4 @@ run
 forge*changelog.txt
 *.bk
 *.bak
+generated

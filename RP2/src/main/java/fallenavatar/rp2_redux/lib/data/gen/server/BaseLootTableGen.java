@@ -1,24 +1,43 @@
-package fallenavatar.rp2_redux.lib.data.gen;
+package fallenavatar.rp2_redux.lib.data.gen.server;
 
+import java.io.IOException;
+import java.nio.file.Path;
+import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import net.minecraft.data.LootTableProvider;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public abstract class LootTableGen extends LootTableProvider {
+import net.minecraft.block.Block;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.DirectoryCache;
+import net.minecraft.data.IDataProvider;
+import net.minecraft.data.LootTableProvider;
+import net.minecraft.loot.ConstantRange;
+import net.minecraft.loot.DynamicLootEntry;
+import net.minecraft.loot.ItemLootEntry;
+import net.minecraft.loot.LootParameterSets;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.LootTableManager;
+import net.minecraft.loot.functions.CopyName;
+import net.minecraft.loot.functions.CopyNbt;
+import net.minecraft.loot.functions.SetContents;
+import net.minecraft.util.ResourceLocation;
+
+public abstract class BaseLootTableGen extends LootTableProvider {
 	private static final Logger LOGGER = LogManager.getLogger();
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
 
     // Filled by subclasses
     protected final Map<Block, LootTable.Builder> lootTables = new HashMap<>();
 
-    private final DataGenerator generator;
+    protected final DataGenerator generator;
 
-    public LootTableGen(DataGenerator dataGeneratorIn) {
+    public BaseLootTableGen(DataGenerator dataGeneratorIn) {
         super(dataGeneratorIn);
         this.generator = dataGeneratorIn;
     }
@@ -27,19 +46,19 @@ public abstract class LootTableGen extends LootTableProvider {
     protected abstract void addTables();
 
     // Subclasses can call this if they want a standard loot table. Modify this for your own needs
-    protected LootTableGen.Builder createStandardTable(String name, Block block) {
+    protected LootTable.Builder createStandardTable(String name, Block block) {
         LootPool.Builder builder = LootPool.builder()
                 .name(name)
                 .rolls(ConstantRange.of(1))
                 .addEntry(ItemLootEntry.builder(block)
                         .acceptFunction(CopyName.builder(CopyName.Source.BLOCK_ENTITY))
-                        .acceptFunction(CopyNbt.func_215881_a(CopyNbt.Source.BLOCK_ENTITY)
-                                .func_216055_a("inv", "BlockEntityTag.inv", CopyNbt.Action.REPLACE)
-                                .func_216055_a("energy", "BlockEntityTag.energy", CopyNbt.Action.REPLACE))
-                        .acceptFunction(SetContents.func_215920_b()
-                                .func_216075_a(DynamicLootEntry.func_216162_a(new ResourceLocation("minecraft", "contents"))))
+                        .acceptFunction(CopyNbt.builder(CopyNbt.Source.BLOCK_ENTITY)
+                                .addOperation("inv", "BlockEntityTag.inv", CopyNbt.Action.REPLACE)
+                                .addOperation("energy", "BlockEntityTag.energy", CopyNbt.Action.REPLACE))
+                        .acceptFunction(SetContents.builderIn()
+                                .addLootEntry(DynamicLootEntry.func_216162_a(new ResourceLocation("minecraft", "contents"))))
                 );
-        return LootTableGen.builder().addLootPool(builder);
+        return LootTable.builder().addLootPool(builder);
     }
 
     @Override
@@ -55,7 +74,7 @@ public abstract class LootTableGen extends LootTableProvider {
     }
 
     // Actually write out the tables in the output folder
-    private void writeTables(DirectoryCache cache, Map<ResourceLocation, LootTableGen> tables) {
+    private void writeTables(DirectoryCache cache, Map<ResourceLocation, LootTable> tables) {
         Path outputFolder = this.generator.getOutputFolder();
         tables.forEach((key, lootTable) -> {
             Path path = outputFolder.resolve("data/" + key.getNamespace() + "/loot_tables/" + key.getPath() + ".json");
@@ -65,10 +84,5 @@ public abstract class LootTableGen extends LootTableProvider {
                 LOGGER.error("Couldn't write loot table {}", path, e);
             }
         });
-    }
-
-    @Override
-    public String getName() {
-        return "MyTutorial LootTables";
     }
 }
