@@ -16,7 +16,13 @@ public abstract class BaseThingyDef {
 	public String getID() { return id; }
 
 	public String getName() {
-		String ret = getModID()+":";
+		return getName(true);
+	}
+
+	public String getName(boolean includeModID) {
+		String ret = "";
+		if( includeModID )
+			ret += getModID()+":";
 		String cat = getCategory();
 
 		if( cat != null && cat.trim() != "")

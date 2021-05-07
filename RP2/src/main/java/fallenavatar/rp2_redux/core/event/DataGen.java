@@ -23,14 +23,15 @@ import static fallenavatar.rp2_redux.lib.util.Constants.ID_RP2_REDUX;
 
 @Mod.EventBusSubscriber(modid = ID_RP2_REDUX, bus = Bus.MOD)
 public class DataGen {
+	private static boolean disableDataGen = false;
 	@SubscribeEvent
     public static void gatherData(GatherDataEvent e) {
         DataGenerator gen = e.getGenerator();
 		ExistingFileHelper efh = e.getExistingFileHelper();
 
-        if( e.includeServer() )
+        if( !disableDataGen && e.includeServer() )
 			gatherServerData(gen, efh);
-		if( e.includeClient() )
+		if( !disableDataGen && e.includeClient() )
 			gatherClientData(gen, efh);
     }
 

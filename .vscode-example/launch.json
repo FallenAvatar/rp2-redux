@@ -31,7 +31,7 @@
 			"projectName": "RP2",
 			"cwd": "${workspaceFolder}\\RP2\\run",
 			"vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dSCAN,REGISTRIES,REGISTRYDUMP -Dmixin.env.disableRefMap\u003dtrue",
-			"args": "--all --mod rp2_redux --output D:\\Home\\Amy\\Projects\\Personal\\Games\\mc-mods\\rp2-redux\\RP2\\src\\generated\\resources --existing D:\\Home\\Amy\\Projects\\Personal\\Games\\mc-mods\\rp2-redux\\RP2\\src\\main\\resources",
+			"args": "--all --mod rp2_redux --output ${workspaceFolder}\\RP2\\src\\generated\\resources --existing ${workspaceFolder}\\RP2\\src\\main\\resources",
 			"env": {
 				"MOD_CLASSES": "CoFHCore%%${workspaceFolder}\\CoFHCore\\bin\\main;CoFHCore%%${workspaceFolder}\\CoFHCore\\bin\\main;RP2%%${workspaceFolder}\\RP2\\bin\\main;RP2%%${workspaceFolder}\\RP2\\bin\\main;ThermalCore%%${workspaceFolder}\\ThermalCore\\bin\\main;ThermalCore%%${workspaceFolder}\\ThermalCore\\bin\\main",
 				"MCP_MAPPINGS": "snapshot_20201028-1.16.3",

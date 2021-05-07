@@ -7,6 +7,7 @@ import com.google.common.base.Supplier;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 import cofh.core.item.ItemCoFH;
 import cofh.core.item.SickleItem;
@@ -45,6 +46,31 @@ public class RegistrationHelper {
         BLOCKS.register(name, blockSup);
         ITEMS.register(name, itemSup);
     }
+
+	public static void registerBlock(ResourceLocation name, Supplier<Block> sup) {
+        registerBlock(name, sup, RP2_BLOCKS, Rarity.COMMON);
+    }
+
+    public static void registerBlock(ResourceLocation name, Supplier<Block> sup, Rarity rarity) {
+        registerBlock(name, sup, RP2_BLOCKS, rarity);
+    }
+
+	public static void registerBlock(ResourceLocation name, Supplier<Block> sup, ItemGroup group) {
+        registerBlock(name, sup, group, Rarity.COMMON);
+    }
+
+    public static void registerBlock(ResourceLocation name, Supplier<Block> sup, ItemGroup group, Rarity rarity) {
+        registerBlockAndItem(name, sup, () -> new BlockItem(BLOCKS.get(name), new Item.Properties().group(group).rarity(rarity)));
+    }
+
+    public static void registerBlockOnly(ResourceLocation name, Supplier<Block> sup) {
+        BLOCKS.register(name, sup);
+    }
+
+    public static void registerBlockAndItem(ResourceLocation name, Supplier<Block> blockSup, Supplier<Item> itemSup) {
+        BLOCKS.register(name, blockSup);
+        ITEMS.register(name, itemSup);
+    }
     // endregion
 
     // region ITEMS
@@ -61,6 +87,22 @@ public class RegistrationHelper {
     }
 
 	public static RegistryObject<Item> registerItem(String name, Supplier<Item> sup) {
+        return ITEMS.register(name, sup);
+    }
+
+	public static RegistryObject<Item> registerItem(ResourceLocation name) {
+        return registerItem(name, RP2_ITEMS, Rarity.COMMON);
+    }
+
+    public static RegistryObject<Item> registerItem(ResourceLocation name, ItemGroup group) {
+        return registerItem(name, group, Rarity.COMMON);
+    }
+
+    public static RegistryObject<Item> registerItem(ResourceLocation name, ItemGroup group, Rarity rarity) {
+        return registerItem(name, () -> new Item(new Item.Properties().group(group).rarity(rarity)));
+    }
+
+	public static RegistryObject<Item> registerItem(ResourceLocation name, Supplier<Item> sup) {
         return ITEMS.register(name, sup);
     }
     // endregion
