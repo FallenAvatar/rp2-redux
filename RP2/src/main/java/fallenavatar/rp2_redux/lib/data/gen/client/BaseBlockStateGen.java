@@ -19,7 +19,7 @@ public abstract class BaseBlockStateGen extends BlockStateProvider {
         super(gen, ID_RP2_REDUX, exFileHelper);
     }
 
-	public void genBlock(BaseBlockDef block) {
-		block.GenData(this);
+	public void genBlockState(BaseBlockDef block) {
+		block.GenBlockState(this);
 	}
 }

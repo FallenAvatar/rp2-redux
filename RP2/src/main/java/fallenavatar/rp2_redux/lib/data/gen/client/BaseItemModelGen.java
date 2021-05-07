@@ -11,6 +11,8 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import fallenavatar.rp2_redux.lib.data.def.BaseItemDef;
+
 public abstract class BaseItemModelGen extends ItemModelProvider {
 	private static final Logger LOGGER = LogManager.getLogger();
 
@@ -18,7 +20,7 @@ public abstract class BaseItemModelGen extends ItemModelProvider {
 		super(generator, ID_RP2_REDUX, existingFileHelper);
 	}
 
-	@Override
-	protected void registerModels() {
+	public void genItemModel(BaseItemDef item) {
+		item.GenItemModel(this);
 	}
 }

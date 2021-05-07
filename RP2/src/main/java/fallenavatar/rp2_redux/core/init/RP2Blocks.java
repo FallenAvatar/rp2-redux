@@ -29,7 +29,8 @@ public class RP2Blocks {
 		RegistrationHelper.registerBlock(ID_MARBLE, () -> new Block(from(Blocks.STONE)) );
 		RegistrationHelper.registerBlock(ID_MARBLE_BRICKS, () -> new Block(from(Blocks.STONE_BRICKS)) );
 
-		RegistrationHelper.registerBlock(ID_BASALT, () -> new Block(from(Blocks.STONE)) );
+		Basalt.Register();
+		//RegistrationHelper.registerBlock("world/"+ID_BASALT, () -> new Block(from(Blocks.STONE)) );
 		RegistrationHelper.registerBlock(ID_BASALT_COBBLESTONE, () -> new Block(from(Blocks.COBBLESTONE)) );
 		RegistrationHelper.registerBlock(ID_BASALT_SMOOTH, () -> new Block(from(Blocks.SMOOTH_STONE)) );
 		RegistrationHelper.registerBlock(ID_BASALT_CHISELED, () -> new Block(from(Blocks.CHISELED_STONE_BRICKS)) );
@@ -85,8 +86,10 @@ public class RP2Blocks {
 
 
 
-		RegistrationHelper.registerBlock(ID_PROJECT_TABLE, () -> new ProjectTable(from(Blocks.CRAFTING_TABLE)), RP2_MACHINES );
-		TILE_ENTITIES.register(ID_PROJECT_TABLE, () -> TileEntityType.Builder.create(ProjectTableTile::new, PROJECT_TABLE).build(null));
+		RegistrationHelper.registerBlock(ID_PROJECT_TABLE,() -> new ProjectTable(from(Blocks.CRAFTING_TABLE)), RP2_MACHINES );
+		TILE_ENTITIES.register(ID_PROJECT_TABLE,
+			() -> TileEntityType.Builder.create(ProjectTableTile::new,
+			PROJECT_TABLE).build(null));
 
 		RegistrationHelper.registerBlock(ID_ALLOY_FURNACE, () -> new AlloyFurnace(from(Blocks.FURNACE)), RP2_MACHINES );
 		TILE_ENTITIES.register(ID_ALLOY_FURNACE, () -> TileEntityType.Builder.create(AlloyFurnaceTile::new, ALLOY_FURNACE).build(null));

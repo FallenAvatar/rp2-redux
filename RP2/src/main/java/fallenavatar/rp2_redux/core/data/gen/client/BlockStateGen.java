@@ -16,6 +16,6 @@ public class BlockStateGen extends BaseBlockStateGen {
 
 	@Override
     protected void registerStatesAndModels() {
-        genBlock(RP2Blocks.Basalt);
+        genBlockState(RP2Blocks.Basalt);
     }
 }

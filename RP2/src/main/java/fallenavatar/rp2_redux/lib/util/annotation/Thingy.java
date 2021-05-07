@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 public @interface Thingy {
 	String mod();
 	String id();
-	String path();
+	String category();
 }
