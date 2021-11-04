@@ -3,17 +3,20 @@ package fallenavatar.rp2_redux.lib.data.def;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
-import fallenavatar.rp2_redux.lib.util.annotation.Thingy;
+import fallenavatar.rp2_redux.lib.BaseModInfo;
 
 public abstract class BaseThingyDef {
-	protected String mod_id;
-	public String getModID() { return mod_id; }
+	protected BaseModInfo modInfo;
+	public BaseModInfo getModInfo() { return modInfo; }
 
 	protected String category;
 	public String getCategory() { return category; }
 
-	protected String id;
-	public String getID() { return id; }
+	protected String thingyId;
+	public String getID() { return thingyId; }
+
+	protected String thingyName;
+	public String getI10nName() { return thingyName; }
 
 	public String getName() {
 		return getName(true);
@@ -22,7 +25,7 @@ public abstract class BaseThingyDef {
 	public String getName(boolean includeModID) {
 		String ret = "";
 		if( includeModID )
-			ret += getModID()+":";
+			ret += getModInfo().getModID()+":";
 		String cat = getCategory();
 
 		if( cat != null && cat.trim() != "")
@@ -38,20 +41,20 @@ public abstract class BaseThingyDef {
 		if( cat != null && cat.trim() != "")
 			ret += cat+"/";
 
-		return new ResourceLocation(getModID(), ret + getID());
+		return new ResourceLocation(getModInfo().getModID(), ret + getID());
 	}
 
 	public abstract String getLangName();
 
-	protected ItemGroup tab;
-	public ItemGroup getTab() { return tab; }
+	protected ItemGroup tabGroup;
+	public ItemGroup getTab() { return tabGroup; }
 
-	protected BaseThingyDef(ItemGroup tab) {
-		Thingy attr = this.getClass().getAnnotation(Thingy.class);
-		this.mod_id = attr.mod();
-		this.category = attr.category();
-		this.id = attr.id();
-		this.tab = tab;
+	protected BaseThingyDef(BaseModInfo mi, String cat, String id, String i10n_name, ItemGroup tab) {
+		modInfo = mi;
+		category = cat;
+		thingyId = id;
+		thingyName = i10n_name;
+		tabGroup = tab;
 	}
 
 	public abstract void Register();

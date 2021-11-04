@@ -18,6 +18,8 @@ import cofh.core.util.Proxy;
 import cofh.core.util.ProxyClient;
 import cofh.lib.util.DeferredRegisterCoFH;
 
+import fallenavatar.rp2_redux.lib.BaseModInfo;
+import fallenavatar.rp2_redux.core.init.RP2Thingys;
 import fallenavatar.rp2_redux.core.init.RP2Blocks;
 import fallenavatar.rp2_redux.core.init.RP2Containers;
 import fallenavatar.rp2_redux.core.init.RP2Items;
@@ -33,6 +35,8 @@ import static fallenavatar.rp2_redux.lib.util.Constants.*;
 public class RP2ReduxMod {
 	public static final Logger LOG = LogManager.getLogger(ID_RP2_REDUX);
 	public static final Proxy PROXY = DistExecutor.safeRunForDist(() -> ProxyClient::new, () -> Proxy::new);
+
+	public static final BaseModInfo ModInfo = new RP2ReduxInfo();
 
 	public static final DeferredRegisterCoFH<Block> BLOCKS = DeferredRegisterCoFH.create(ForgeRegistries.BLOCKS, ID_RP2_REDUX);
 	public static final DeferredRegisterCoFH<Item> ITEMS = DeferredRegisterCoFH.create(ForgeRegistries.ITEMS, ID_RP2_REDUX);
@@ -51,6 +55,8 @@ public class RP2ReduxMod {
 		RECIPE_SERIALIZERS.register(modEventBus);
 		TILE_ENTITIES.register(modEventBus);
 
+		RP2Thingys.register();
+
 		RP2Blocks.register();
 		RP2Items.register();
 		RP2Containers.register();
@@ -58,5 +64,11 @@ public class RP2ReduxMod {
 		RP2RecipeManagers.register();
 		RP2RecipeSerializers.register();
 		RP2RecipeTypes.register();
+	}
+
+	private static class RP2ReduxInfo extends BaseModInfo {
+		public RP2ReduxInfo() {
+			super(ID_RP2_REDUX, "RedPower2 Redux");
+		}
 	}
 }

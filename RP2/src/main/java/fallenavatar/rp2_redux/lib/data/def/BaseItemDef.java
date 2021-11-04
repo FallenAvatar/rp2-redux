@@ -3,16 +3,17 @@ package fallenavatar.rp2_redux.lib.data.def;
 import com.google.common.base.Supplier;
 
 import fallenavatar.rp2_redux.core.util.helpers.RegistrationHelper;
+import fallenavatar.rp2_redux.lib.BaseModInfo;
 import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile.UncheckedModelFile;
 
 public class BaseItemDef extends BaseThingyDef {
-	public String getLangName() { return "item."+getModID()+"."+id; }
+	public String getLangName() { return "item."+getModInfo().getModID()+"."+getID(); }
 
 	public String getItemName() {
-		String ret = getModID()+":item/";
+		String ret = getModInfo().getModID()+":item/";
 		String cat = getCategory();
 
 		if( cat != null && cat.trim() != "")
@@ -28,13 +29,13 @@ public class BaseItemDef extends BaseThingyDef {
 		if( cat != null && cat.trim() != "")
 			ret += cat+"/";
 
-		return new ResourceLocation(getModID(), ret + getID());
+		return new ResourceLocation(getModInfo().getModID(), ret + getID());
 	}
 
 	public Supplier<Item> asItem() { return () -> new Item(new Item.Properties().group(getTab()).rarity(Rarity.COMMON)); }
 
-	public BaseItemDef(ItemGroup tab) {
-		super(tab);
+	public BaseItemDef(BaseModInfo mi, String cat, String id, String i10n_name, ItemGroup tab) {
+		super(mi, cat, id, i10n_name, tab);
 	}
 
 	public void GenItemModel(ItemModelProvider imp) {
@@ -43,6 +44,6 @@ public class BaseItemDef extends BaseThingyDef {
 
 	@Override
 	public void Register() {
-		RegistrationHelper.registerItem(getName(false), asItem());
+		RegistrationHelper.registerItem(getName(), asItem());
 	}
 }

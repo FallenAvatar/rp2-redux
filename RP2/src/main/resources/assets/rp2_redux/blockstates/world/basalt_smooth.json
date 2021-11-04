@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"": {
+			"model": "rp2_redux:block/world/basalt_smooth"
+		}
+	}
+}

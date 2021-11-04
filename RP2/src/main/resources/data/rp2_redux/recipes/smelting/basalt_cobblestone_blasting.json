@@ -3,7 +3,7 @@
 	"ingredient": {
 		"item": "rp2_redux:world/basalt"
 	},
-	"result": "rp2_redux:basalt_cobblestone",
+	"result": "rp2_redux:world/basalt_cobblestone",
 	"experience": 0.5,
 	"cookingtime": 100
 }

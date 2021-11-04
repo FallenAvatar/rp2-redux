@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:blasting",
 	"ingredient": {
-		"item": "rp2_redux:basalt_cobblestone"
+		"item": "rp2_redux:world/basalt_cobblestone"
 	},
 	"result": "rp2_redux:world/basalt",
 	"experience": 0.5,

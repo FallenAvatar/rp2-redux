@@ -1,8 +1,6 @@
 {
-	"parent": "minecraft:block/orientable",
+	"parent": "rp2_redux:block/alloy_furnace",
 	"textures": {
-		"side": "rp2_redux:block/machines/alloy_furnace-side",
 		"front": "rp2_redux:block/machines/alloy_furnace-front-lit",
-		"top": "rp2_redux:block/machines/alloy_furnace-top"
 	}
 }
